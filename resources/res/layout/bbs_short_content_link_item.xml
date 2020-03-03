@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/user_activity_item_gray_sharp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="6dp" android:layout_marginStart="4dp" android:layout_marginEnd="10dp">
+        <ImageView android:id="@+id/link_img" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/bbs_sub_forum_icon"/>
+        <View android:id="@+id/link_img_cover" android:background="#4c000000" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp"/>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bbs_link_flag"/>
+    </FrameLayout>
+    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="#222222" android:layout_gravity="center_vertical" android:id="@+id/link_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1" android:layout_marginEnd="16dp" app:textBounds="1"/>
+</LinearLayout>

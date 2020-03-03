@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/white_pressed_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1px" style="@style/layoutLocal">
+    <include layout="@layout/following_item_common_top"/>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_following_conor_follow_other" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="15dp" android:layout_marginStart="57dp" android:layout_marginEnd="16dp">
+        <com.mi.global.bbs.view.CircleImageView android:layout_gravity="center" android:id="@+id/item_pic" android:background="@drawable/icon_default_head" android:layout_width="52dp" android:layout_height="52dp" android:scaleType="centerCrop" android:layout_marginStart="12dp"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15dp" android:textColor="#222222" android:ellipsize="end" android:id="@+id/item_title" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textDirection="locale" android:paddingStart="12dp" android:paddingEnd="16dp" app:textBounds="1"/>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/item_title" android:paddingStart="10dp">
+                <com.mi.global.bbs.view.Editor.FontTextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/follower_item_follower_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textDirection="locale"/>
+                <com.mi.global.bbs.view.Editor.FontTextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/follower_item_thread_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textDirection="locale" android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.mi.global.bbs.view.LikeAndCommentView android:layout_gravity="start" android:id="@+id/view_like_comment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="45dp" android:layout_marginEnd="13dp"/>
+    <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

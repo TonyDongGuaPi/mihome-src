@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/std_main_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <in.srain.cube.views.ptr.PtrFrameLayout android:id="@+id/pull_down_refresh" android:layout_width="match_parent" android:layout_height="match_parent" app:ptr_duration_to_close="300" app:ptr_duration_to_close_header="500" app:ptr_keep_header_when_refresh="true" app:ptr_pull_to_fresh="false" app:ptr_ratio_of_header_height_to_refresh="1.2" app:ptr_resistance="1.7">
+            <com.xiaomi.smarthome.library.common.widget.SmartHomePtrHeader android:id="@+id/pull_header_new" android:layout_width="match_parent" android:layout_height="60dp"/>
+            <com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshListView android:layout_gravity="center_horizontal" android:id="@+id/lv_scenes" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+        </in.srain.cube.views.ptr.PtrFrameLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_add_scene_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_5" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gateway_scene_empty_tip" android:drawableTop="@drawable/icon_scene_empty" android:drawablePadding="10dp" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <ImageView android:id="@+id/add_iv" android:paddingRight="19dp" android:paddingBottom="19dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scene_auto_add_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

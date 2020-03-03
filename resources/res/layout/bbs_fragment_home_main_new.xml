@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mi.global.bbs.view.swipe.MySwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/id_mainswiperefreshlayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/main_title_container">
+        <com.mi.global.bbs.view.headerviewpager.HeaderViewPager android:orientation="vertical" android:id="@+id/scrollableLayout" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" app:hvp_topOffset="0dp">
+            <include layout="@layout/bbs_main_list_top_banner"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <com.mi.global.bbs.view.PagerSlidingTabStrip android:layout_gravity="center_horizontal" android:id="@+id/news_forum_nag" android:layout_width="wrap_content" android:layout_height="44dp"/>
+                <View android:layout_gravity="bottom" android:background="@color/user_center_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            </LinearLayout>
+            <android.support.v4.view.ViewPager android:id="@+id/news_forum_pager" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30"/>
+        </com.mi.global.bbs.view.headerviewpager.HeaderViewPager>
+        <include android:id="@+id/home_title_container" layout="@layout/bbs_include_home_title_bar"/>
+    </FrameLayout>
+</com.mi.global.bbs.view.swipe.MySwipeRefreshLayout>

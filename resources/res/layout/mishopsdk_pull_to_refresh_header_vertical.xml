@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:id="@+id/mishopsdk_pulltorefresh_layout_inner" android:paddingLeft="@dimen/mishopsdk_padding16" android:paddingRight="@dimen/mishopsdk_padding16" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="40dp" android:minHeight="40dp">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@+id/mishopsdk_pulltorefresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ProgressBar android:layout_gravity="center" android:id="@+id/mishopsdk_pulltorefresh_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@style/mishopsdk_PullToRefreshProgressBar"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceSmallInverse" android:textColor="#a7a8aa" android:id="@+id/mishopsdk_pulltorefresh_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/mishopsdk_pulltorefresh_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/mishopsdk_pulltorefresh_dancing_ellipsis" android:background="@drawable/mishopsdk_dancing_ellipsis" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

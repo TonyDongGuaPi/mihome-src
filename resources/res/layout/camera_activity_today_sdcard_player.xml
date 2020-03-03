@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/camera_title_bar_black_sdcard"/>
+    <FrameLayout android:id="@+id/video_frame" android:background="@color/black" android:layout_width="match_parent" android:layout_height="350dp">
+        <FrameLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/time_container_center" android:background="@drawable/camera_time_shape" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:minWidth="50dp"/>
+        <View android:layout_gravity="center" android:id="@+id/pause_view" android:background="@drawable/camera_icon_center_pause" android:visibility="gone" android:layout_width="64dp" android:layout_height="64dp"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/llVideoViewBottomCtrl" android:background="@color/black_50_transparent" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="@dimen/player_bottom_ctrl_view_height">
+            <FrameLayout android:layout_gravity="center" android:id="@+id/togglePlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/cdcTogglePlay" android:background="@null" android:layout_width="14dp" android:layout_height="15dp" android:scaleType="fitXY"/>
+            </FrameLayout>
+            <View android:layout_gravity="center" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="7"/>
+            <com.xiaomi.smarthome.camera.view.widget.CenterDrawableCheckBox android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/cdcToggleAudio" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableRight="@drawable/home_icon_toggle_audio2" android:layout_weight="1"/>
+            <ImageView android:id="@+id/ivCameraShot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_shot" android:layout_weight="1"/>
+            <com.xiaomi.smarthome.camera.view.TextViewS android:textSize="11sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tvsMultiSpeed" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:gravity="center_horizontal" android:id="@+id/ivFullScreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_fullscreen2" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/llFuncPopup" android:background="@drawable/camera_shape_popup_pic_bg" android:padding="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp">
+            <ImageView android:id="@+id/ivShotPic" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+    <com.xiaomi.smarthome.camera.view.timeline.TimeLineWithDatePickView android:orientation="vertical" android:id="@+id/time_line_date_pick" android:background="@color/camera_white_bg" android:layout_width="match_parent" android:layout_height="@dimen/time_line_with_date_height" android:layout_below="@+id/video_frame">
+        <HorizontalScrollView android:id="@+id/date_pick_scroll" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="30dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/date_pick" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </HorizontalScrollView>
+        <com.xiaomi.smarthome.camera.view.timeline.TimeLineControlView android:id="@+id/time_line_control" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </com.xiaomi.smarthome.camera.view.timeline.TimeLineWithDatePickView>
+    <LinearLayout android:id="@+id/play_hint_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="35dp" android:layout_below="@+id/time_line_date_pick">
+        <View android:layout_gravity="center_vertical" android:background="@drawable/circle_bg_5aff5f00" android:layout_width="6dp" android:layout_height="6dp"/>
+        <TextView android:textSize="12dp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/playback_light_yellow_hint"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/play_hint_2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="10dp" android:layout_below="@+id/play_hint_1">
+        <View android:layout_gravity="center_vertical" android:background="@drawable/circle_bg_33ff5f00" android:layout_width="6dp" android:layout_height="6dp"/>
+        <TextView android:textSize="12dp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:layout_width="210dp" android:layout_height="20dp" android:layout_marginLeft="8dp" android:text="@string/playback_dark_yellow_hint"/>
+    </LinearLayout>
+    <TextView android:textSize="13dp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/see_all_video" android:background="@drawable/normal_confirm_button" android:layout_width="match_parent" android:layout_height="42dp" android:layout_margin="24dp" android:text="@string/see_all_video" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

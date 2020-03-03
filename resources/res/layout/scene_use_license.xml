@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/black_90_transparent" android:gravity="center" android:background="@drawable/common_white_list_padding" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="5dp" android:text="@string/user_license_title" android:includeFontPadding="false"/>
+            <TextView android:textColor="@color/black_75_transparent" android:id="@+id/user_license_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/scene_user_license_content" android:includeFontPadding="false" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

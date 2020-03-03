@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <com.mi.global.bbs.view.AbsorbNavigationLayout android:id="@+id/qa_home_navigation_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/qa_home_top_bg_frame" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/qa_home_top_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/qa_home_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/qa_home_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:textDirection="locale" android:layout_marginStart="50dp" app:textBounds="1"/>
+                    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="#c4c4c4" android:id="@+id/qa_home_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="25dp" android:textDirection="locale" android:layout_marginStart="50dp"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <com.mi.global.bbs.view.PagerSlidingTabStrip android:id="@+id/qa_home_nag" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp"/>
+        <android.support.v4.view.ViewPager android:id="@+id/qa_home_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.mi.global.bbs.view.AbsorbNavigationLayout>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="36dp" android:src="@drawable/bbs_action_question_bt_selector" android:onClick="goToPostPage" android:layout_marginEnd="16dp"/>
+</FrameLayout>

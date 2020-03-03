@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.device.ChooseDeviceNestedParent xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/nested_scroll_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/scan_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/choose_device_scan_view"/>
+    <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:id="@+id/device_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaomi.smarthome.device.choosedevice.VerticalSlidingTab android:id="@+id/left_list_view" android:background="@color/white" android:layout_width="87dp" android:layout_height="match_parent"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/right_recycler" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/left_list_view" android:layout_toEndOf="@+id/left_list_view"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/loading_mask" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="112dp" android:layout_height="112dp" android:layout_marginTop="190dp" android:src="@drawable/empty_page"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/loading_page"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.xiaomi.smarthome.device.ChooseDeviceNestedParent>

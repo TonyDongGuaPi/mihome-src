@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/balance_info" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Mibi.Payment.Dialog">
+        <include android:id="@+id/layout_action_bar" layout="@layout/mibi_dialog_action_bar"/>
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@android:id/list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@null" android:divider="@null" android:choiceMode="singleChoice" android:fastScrollEnabled="false"/>
+    </LinearLayout>
+</FrameLayout>

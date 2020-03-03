@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/view_like_comment_ly" android:background="@drawable/white_pressed_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.mi.global.bbs.view.praise.PraiseButton android:id="@+id/view_like_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon_size="20dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ly_comment_bottom" android:layout_width="30dp" android:layout_height="wrap_content">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="13sp" android:textColor="#c4c4c4" android:id="@+id/tv_comments_edit_text" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="35dp" android:text="@string/home_write_a_comment" android:textDirection="locale" android:layout_marginStart="3dp"/>
+        <View android:id="@+id/view_comment_bottom" android:background="#c4c4c4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="3dp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/fl_home_item_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="13dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_comment_send" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_comment_send"/>
+        <com.mi.global.bbs.view.CommentNumView android:id="@+id/view_comment_btn" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

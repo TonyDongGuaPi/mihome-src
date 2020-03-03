@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/view_tp_on" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.xiaomi.smarthome.library.common.widget.TimePicker android:id="@+id/tp_timer_on" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="13dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshListView android:scrollbarStyle="insideOverlay" android:layout_gravity="center_horizontal" android:id="@+id/pull_down_lv_family_list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:layout_gravity="center" android:id="@+id/load_error_toast" android:padding="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/family_load_data_failed"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/empty_bg" android:background="@drawable/std_family_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp"/>
+    </FrameLayout>
+    <TextView android:id="@+id/btn_create_family" android:background="@drawable/family_normal_button" android:text="@string/family_create" style="@style/single_bottom_button_white"/>
+</LinearLayout>

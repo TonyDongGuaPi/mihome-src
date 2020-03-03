@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mi.global.bbs.view.Editor.FontTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:ellipsize="end" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="16dp" android:paddingEnd="16dp"/>

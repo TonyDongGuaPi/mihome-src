@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/parentPanel" android:background="@drawable/yp_common_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+    <View android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/topPanel" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_template" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/icon" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null"/>
+            <TextView android:textSize="@dimen/std_dialog_title_font_size" android:textColor="@color/yp_std_dialog_title" android:ellipsize="end" android:gravity="center" android:id="@+id/alertTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/title_divider_line" android:background="@color/yp_std_list_divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <ScrollView android:layout_gravity="center_vertical" android:id="@+id/scrollView" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+            <TextView android:textSize="@dimen/std_dialog_msg_font_size" android:textColor="@color/yp_std_dialog_msg" android:gravity="center" android:id="@+id/message" android:paddingLeft="@dimen/std_dialog_common_padding" android:paddingRight="@dimen/std_dialog_common_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="3dp"/>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/customPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <FrameLayout android:id="@+id/custom" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <View android:id="@+id/title_divider_line_bottom" android:background="@color/yp_std_list_divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/buttonPanel" android:layout_width="match_parent" android:layout_height="52dp">
+        <Button android:textSize="@dimen/font_size_15sp" android:textColor="@color/yp_std_dialog_button_highlight_black" android:gravity="center" android:id="@+id/button2" android:background="@drawable/yp_common_btn_left" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+        <Button android:textSize="@dimen/font_size_15sp" android:textColor="@color/yp_std_dialog_button_highlight_black" android:gravity="center" android:id="@+id/button3" android:background="@drawable/yp_common_button" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+        <Button android:textSize="@dimen/font_size_15sp" android:textColor="@color/yp_std_dialog_button_highlight_black" android:gravity="center" android:id="@+id/button1" android:background="@drawable/yp_common_btn_right" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

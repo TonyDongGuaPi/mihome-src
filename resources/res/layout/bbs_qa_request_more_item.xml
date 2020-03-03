@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/qa_request_more_item_layout" android:background="@drawable/home_banner_white_pressed_selector" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutLocal">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp">
+        <com.mi.global.bbs.view.CircleImageView android:id="@+id/item_icon" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="15dp" android:scaleType="centerCrop" android:layout_marginEnd="6dp"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:textDirection="locale" android:layout_toEndOf="@+id/item_icon"/>
+    </RelativeLayout>
+    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="#222222" android:ellipsize="end" android:id="@+id/item_answer_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:maxLines="2" android:lineSpacingExtra="5dp" android:textDirection="locale" android:paddingStart="16dp" android:paddingEnd="16dp" app:textBounds="1"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="13sp" android:textColor="#c4c4c4" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="15dp" android:textDirection="locale" android:layout_marginStart="16dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="16dp" android:layout_alignParentEnd="true">
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="13sp" android:textColor="#ffff6700" android:id="@+id/answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="15dp" android:text="@string/qa_home_answer" android:textDirection="locale"/>
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/ignore" android:background="@drawable/ignore_textview_bg" android:paddingTop="7dp" android:paddingBottom="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/qa_home_ignore" android:textDirection="locale" android:paddingStart="13dp" android:paddingEnd="13dp"/>
+            <LinearLayout android:id="@+id/answer_img_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@+id/answer_img" android:background="@drawable/bbs_top_request_close_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/user_center_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

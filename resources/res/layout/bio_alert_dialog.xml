@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rl_dialog_content" android:background="@drawable/shape_corner" android:layout_width="300dp" android:layout_height="wrap_content">
+        <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#3e3e3e" android:id="@+id/dialog_title" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp"/>
+        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#3e3e3e" android:id="@+id/dialog_msg" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        <TextView android:textSize="16dp" android:textColor="#3e3e3e" android:id="@+id/dialog_msg_2" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/dialog_msg_icons" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <ImageView android:background="@drawable/nav_people" android:layout_width="145dp" android:layout_height="134dp" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="14dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dialog_button_container" android:layout_width="match_parent" android:layout_height="48dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dialog_cancel" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                <TextView android:textSize="16dp" android:textColor="#3e3e3e" android:id="@+id/dialog_cancel_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:id="@+id/dialog_split" android:background="@android:color/darker_gray" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dialog_ok" android:layout_width="150dp" android:layout_height="wrap_content">
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#3e3e3e" android:id="@+id/dialog_ok_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="96dp">
+    <LinearLayout android:id="@+id/ll_image" android:layout_width="@dimen/size_80dp" android:layout_height="@dimen/size_80dp" android:layout_marginLeft="14dp" android:layout_centerVertical="true">
+        <com.xiaomi.yp_pic_pick.widgets.YPSimpleDraweeView android:id="@+id/album_img" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_photo_default"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/album_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="图片" android:singleLine="true" android:layout_toRightOf="@+id/ll_image" android:layout_centerVertical="true"/>
+    <TextView android:textSize="13sp" android:textColor="#99666666" android:gravity="center_vertical" android:id="@+id/album_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/album_title" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/icon_img_unselect" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+    <View android:layout_marginLeft="14dp" android:layout_marginRight="14dp" android:layout_alignParentBottom="true" style="@style/CommonHorizontalLine"/>
+</RelativeLayout>

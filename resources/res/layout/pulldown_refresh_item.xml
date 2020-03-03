@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="-50dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/head_arrowImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_refresh_arrow_locked"/>
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/head_progressBar" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:indeterminate="true" style="@style/circle_progressbar_large_locked"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/class_text_trans_80" android:id="@+id/refresh_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/pull_down_refresh"/>
+    </LinearLayout>
+</LinearLayout>

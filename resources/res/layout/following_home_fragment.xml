@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <View android:id="@+id/toolbar_agent" android:background="@color/main_title_bar_bg" android:layout_width="match_parent" android:layout_height="24dp"/>
+    <com.mi.global.bbs.view.AbsorbNavigationLayout android:id="@+id/following_home_navigation_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="match_parent" android:layout_height="0dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="21dp"/>
+            <RelativeLayout android:id="@+id/following_home_toolbar" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:id="@+id/btn_back" android:layout_width="40dp" android:layout_height="match_parent">
+                        <ImageView android:background="@drawable/bbs_arrow_up_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="13dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:layout_marginEnd="40dp">
+                        <com.mi.global.bbs.view.PagerSlidingTabStrip android:id="@+id/following_home_nag" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true" android:textDirection="locale"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/recommend" android:background="@color/white" android:visibility="visible" android:layout_width="40dp" android:layout_height="match_parent" android:layout_marginStart="-40dp">
+                        <ImageView android:background="@drawable/add_new_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="13dp" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="@color/user_center_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager android:id="@+id/following_home_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.mi.global.bbs.view.AbsorbNavigationLayout>
+</FrameLayout>

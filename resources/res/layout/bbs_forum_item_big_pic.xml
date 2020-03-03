@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/white_pressed_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" style="@style/layoutLocal">
+    <include layout="@layout/bbs_forum_item_common_top"/>
+    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="@dimen/forum_title_textSize" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/forum_item_title" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingMultiplier="1.2" android:textDirection="locale" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    <ImageView android:id="@+id/forum_item_big_pic" android:layout_width="match_parent" android:layout_height="185dp" android:layout_margin="16dp" android:scaleType="centerCrop"/>
+    <include layout="@layout/bbs_forum_item_common_bottom"/>
+</LinearLayout>

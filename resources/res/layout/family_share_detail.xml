@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/class_T" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="43.3dp">
+                <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="80dp" android:layout_height="80dp" android:scaleType="fitCenter"/>
+                <ImageView android:layout_gravity="center" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/head_mask" android:scaleType="fitCenter"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/class_text_10" android:layout_gravity="center_horizontal" android:id="@+id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/class_text_3" android:layout_gravity="center_horizontal" android:id="@+id/relation_ship" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.7dp"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:background="#d0d0d1" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="22dp" android:layout_marginTop="30dp" android:layout_marginRight="22dp" android:layout_marginStart="22dp" android:layout_marginEnd="22dp"/>
+            <com.xiaomi.smarthome.library.common.widget.ExpandListView android:scrollbarStyle="outsideOverlay" android:id="@+id/faimlly_device_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_marginRight="23dp" android:listSelector="@android:color/transparent" android:divider="@null" android:layout_marginStart="23dp" android:layout_marginEnd="23dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/add_device_container" android:layout_width="match_parent" android:layout_height="62.7dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:src="@drawable/add_family_member" android:layout_marginStart="22dp"/>
+                <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/class_text_10" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/smarthome_add_share" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

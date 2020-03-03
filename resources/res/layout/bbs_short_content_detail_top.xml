@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mi.global.bbs.view.CircleImageView android:id="@+id/user_icon" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="16dp" android:layout_marginBottom="8dp" android:layout_marginStart="16dp" android:layout_marginEnd="10dp"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="@color/activity_black_color" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_toEndOf="@+id/user_icon"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="@color/main_yellow" android:id="@+id/delete_bt" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/delete" android:layout_alignBottom="@+id/user_name" android:layout_marginStart="10dp" android:layout_toEndOf="@+id/user_name"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/post_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/user_name" android:layout_alignStart="@+id/user_name"/>
+    </RelativeLayout>
+    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="#222222" android:id="@+id/content" android:paddingTop="5dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/extra_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    <View android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="@color/black" android:id="@+id/comments_count" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textDirection="locale" android:paddingStart="16dp" app:textBounds="1"/>
+        <ImageView android:id="@+id/comments_order_bt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bbs_comment_order_icon" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    </LinearLayout>
+    <View android:background="@color/user_center_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

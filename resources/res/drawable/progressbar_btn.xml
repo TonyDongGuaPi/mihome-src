@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@android:id/background">
+        <nine-patch android:src="@drawable/miwifi_install_button_normal"/>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <nine-patch android:src="@drawable/miwifi_install_button_progress"/>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <nine-patch android:src="@drawable/miwifi_install_button_progress"/>
+        </clip>
+    </item>
+</layer-list>

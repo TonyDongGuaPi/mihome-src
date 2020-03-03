@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/v6_divider_line_light"/>
+    <item android:top="1px">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/v6_dialog_bg_corner_radius" android:bottomRightRadius="@dimen/v6_dialog_bg_corner_radius"/>
+            <solid android:color="@color/v6_button_bg_color_normal_light"/>
+            <size android:height="@dimen/v6_dialog_button_height"/>
+        </shape>
+    </item>
+</layer-list>

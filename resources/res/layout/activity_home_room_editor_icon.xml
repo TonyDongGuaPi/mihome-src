@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/module_a_3_title_bar_return_righttext"/>
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_result" android:background="@drawable/selector_add_recommend_room" android:clickable="true" android:layout_width="76dp" android:layout_height="76dp" android:layout_marginTop="17dp" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true" app:placeholderImage="@drawable/default_bg_normal"/>
+    <ScrollView android:id="@+id/scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="17dp" android:layout_below="@+id/iv_result">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_recommend" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/class_D" android:id="@+id/tv_recommend" android:background="@drawable/shape_common_item_title_bg" android:paddingLeft="17dp" android:paddingTop="20dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="47dp" android:text="@string/room_icon_recommend"/>
+                <com.xiaomi.smarthome.library.common.widget.ExpandGridView android:gravity="center" android:id="@+id/gv_recommend" android:padding="13dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:numColumns="4" android:layout_below="@+id/tv_recommend"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/class_D" android:id="@+id/tv_all" android:background="@drawable/shape_common_item_title_bg" android:paddingLeft="17dp" android:paddingTop="20dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="47dp" android:text="@string/room_icon_all"/>
+                <com.xiaomi.smarthome.library.common.widget.ExpandGridView android:gravity="center" android:id="@+id/gv_all" android:padding="13dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:numColumns="4" android:layout_below="@+id/tv_all"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

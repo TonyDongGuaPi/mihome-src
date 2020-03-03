@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/std_list_background_line_normal" android:layout_width="match_parent" android:layout_height="32dp">
+    <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/ir_text_color_black_light" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/device_auth_speaker_device"/>
+</LinearLayout>

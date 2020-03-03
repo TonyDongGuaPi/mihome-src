@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yp_icon_back_white"/>
+    </FrameLayout>
+    <View android:id="@+id/click_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/center_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yp_icon_play" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/controller" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/play" android:paddingLeft="21dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/yp_icon_small_play"/>
+        <TextView android:textSize="9dp" android:textColor="#ffffff" android:id="@+id/seek_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:minWidth="23dp" android:text="00:00"/>
+        <com.google.android.exoplayer2.ui.DefaultTimeBar android:id="@+id/progress" android:layout_width="0dp" android:layout_height="26dp" android:layout_weight="1" app:bar_height="2dp" app:played_color="#d1a96e" app:scrubber_color="#ffffff" app:touch_target_height="26dp" app:unplayed_color="#33ffffff"/>
+        <TextView android:textSize="9dp" android:textColor="#ffffff" android:id="@+id/total_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:minWidth="23dp" android:text="00:00"/>
+        <ImageView android:id="@+id/exit_full" android:paddingLeft="20dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/yp_icon_small_screen"/>
+        <ImageView android:id="@+id/mute_img" android:paddingLeft="9dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/yp_icon_voice_screen"/>
+    </LinearLayout>
+</RelativeLayout>

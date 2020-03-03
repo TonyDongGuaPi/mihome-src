@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutLocal">
+    <View android:id="@+id/top_divider" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/user_item_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="#666666" android:id="@+id/user_item_top_total" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textDirection="locale" android:paddingStart="15dp"/>
+            <com.mi.global.bbs.view.CheckedTextView android:textSize="15sp" android:textColor="#666666" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/user_item_top_fuzzy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fuzzy_search" android:drawablePadding="10dp" android:drawableEnd="@drawable/switch_selector" android:textDirection="locale" android:paddingEnd="15dp"/>
+        </LinearLayout>
+        <View android:background="@color/divide_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/user_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mi.global.bbs.view.CircleImageView android:id="@+id/user_item_icon" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="13dp"/>
+        <ImageView android:gravity="center" android:id="@+id/user_item_msg" android:paddingTop="6dp" android:paddingBottom="6dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bbs_message" android:layout_centerVertical="true" android:paddingStart="10dp" android:paddingEnd="10dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/user_item_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:singleLine="true" android:textDirection="locale" android:layout_toStartOf="@+id/user_item_msg" android:layout_toEndOf="@+id/user_item_icon"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_vertical" android:id="@+id/user_item_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/user_item_name" android:textDirection="locale" android:layout_toEndOf="@+id/user_item_icon"/>
+    </RelativeLayout>
+    <View android:background="@color/divide_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/yp_share_poster_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="92dp" android:layout_height="30dp" android:layout_marginTop="30dp" android:layout_marginBottom="20dp" android:src="@drawable/yp_share_logo" android:scaleType="fitXY"/>
+    <FrameLayout android:layout_width="348dp" android:layout_height="348dp">
+        <View android:background="@drawable/yp_share_poster_border" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/yp_new_share_poster_img" android:layout_width="346dp" android:layout_height="346dp" android:src="@drawable/poster_demo"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/yp_share_poster_new_border" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="346dp" android:layout_height="wrap_content" android:layout_marginTop="-2dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/class_V" android:ellipsize="end" android:id="@+id/yp_new_share_poster_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1" android:layout_marginEnd="4dp"/>
+            <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/yp_new_share_poster_tag" android:background="@drawable/yp_share_tag" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="15dp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/class_text_3" android:ellipsize="end" android:id="@+id/yp_new_share_poster_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="2" android:includeFontPadding="false"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <TextView android:textSize="20dp" android:textColor="#c53f46" android:id="@+id/yp_new_share_poster_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:includeFontPadding="false"/>
+            <TextView android:textSize="@dimen/font_size_11sp" android:textColor="#c53f46" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" android:includeFontPadding="false"/>
+            <TextView android:textSize="@dimen/font_size_11sp" android:textColor="#c53f46" android:id="@+id/yp_new_share_poster_pricemore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="起" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="320dp" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:id="@+id/yp_new_share_poster_qrcode" android:layout_width="80dp" android:layout_height="80dp" android:scaleType="fitStart"/>
+        <TextView android:textSize="10dp" android:textColor="@color/class_text_2" android:gravity="center_horizontal" android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="长按识别二维码, 了解产品" android:includeFontPadding="false"/>
+    </LinearLayout>
+</merge>

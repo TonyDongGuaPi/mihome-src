@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <include android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" layout="@layout/bbs_common_refresh_layout"/>
+    <View android:background="@color/user_center_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/bbs_comments_layout"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatEditText android:textSize="15sp" android:textColor="#333333" android:textColorHint="#999999" android:id="@+id/replyBt" android:background="@drawable/reply_edit_bg" android:paddingTop="11dp" android:paddingBottom="11dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="7dp" android:hint="@string/reply" android:singleLine="true" android:drawablePadding="8dp" android:layout_weight="1" android:imeOptions="actionSend" android:drawableStart="@drawable/bbs_bottom_reply" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <com.mi.global.bbs.view.MsgView android:layout_gravity="center_vertical" android:id="@+id/likeBt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableStart="@drawable/like_bt_selector_follow" android:textDirection="locale" android:paddingEnd="20dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

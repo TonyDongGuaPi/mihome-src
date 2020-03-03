@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/list" android:padding="@dimen/mibi_giftcard_list_horizental_margin" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:dividerHeight="@dimen/mibi_giftcard_list_horizental_margin"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true"/>
+        <TextView android:id="@+id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mibi_progress_downloading"/>
+        <ImageView android:id="@+id/error_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mibi_content_empty_icon_light"/>
+        <TextView android:textSize="@dimen/mibi_text_size_small" android:textColor="@color/mibi_text_color_giftcard_noCard" android:id="@+id/error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mibi_giftcard_logo_marginTop"/>
+        <Button android:id="@+id/button_retry" android:visibility="gone" android:layout_width="@dimen/mibi_min_limited_button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mibi_min_limited_button_margin_top" android:text="@string/mibi_btn_net_connection_retry" style="@style/Mibi.Widget.Button"/>
+    </LinearLayout>
+    <include android:layout_gravity="center" android:id="@+id/none_giftcard" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/mibi_giftcard_empty"/>
+    <ProgressBar android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/append_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/round_dialog_selector" android:layout_width="320dp" android:layout_height="wrap_content">
+        <com.mi.global.bbs.view.Editor.FontEditText android:textColor="@color/font_gray" android:id="@+id/alert_insert_video_edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:hint="@string/please_insert_youtube_url" android:textDirection="locale"/>
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/common_padding" android:layout_marginEnd="@dimen/common_padding">
+            <com.mi.global.bbs.view.Editor.FontTextView android:textColor="#3f51b5" android:gravity="center" android:id="@+id/alert_insert_video_cancel" android:background="@drawable/bbs_round_bt_selector" android:padding="@dimen/common_padding" android:layout_width="69dp" android:layout_height="wrap_content" android:text="@string/bbs_cancel" android:textDirection="locale"/>
+            <com.mi.global.bbs.view.Editor.FontTextView android:textColor="#3f51b5" android:gravity="center" android:id="@+id/alert_insert_video_ok" android:background="@drawable/bbs_round_bt_selector" android:padding="@dimen/common_padding" android:layout_width="69dp" android:layout_height="wrap_content" android:text="@string/bbs_dialog_ask_ok" android:textDirection="locale"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

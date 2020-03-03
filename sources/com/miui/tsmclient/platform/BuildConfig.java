@@ -1,0 +1,10 @@
+package com.miui.tsmclient.platform;
+
+public final class BuildConfig {
+    public static final String APPLICATION_ID = "com.miui.tsmclient.platform";
+    public static final String BUILD_TYPE = "release";
+    public static final boolean DEBUG = false;
+    public static final String FLAVOR = "band";
+    public static final int VERSION_CODE = 7;
+    public static final String VERSION_NAME = "19.03.28";
+}

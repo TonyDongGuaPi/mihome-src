@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_dev_setting_rn_debug" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.xiaomi.smarthome.framework.page.rndebug.SlideRecyclerView android:id="@+id/srv_rn_debug_plugin_model_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="100dp">
+        <RelativeLayout android:id="@+id/layout_rn_setting_ip" android:background="@drawable/selector_dev_setting_rn_debug_item" android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/tv_ip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IP"/>
+            <TextView android:textSize="14sp" android:textColor="#333333" android:id="@+id/tv_ip_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="xxx.xxx.xxx" android:layout_alignParentBottom="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/um_arrow" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_rn_other_setting" android:background="@drawable/selector_dev_setting_rn_debug_item" android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他设置" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/edit_icon_common_pres" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_plugin_debug" android:background="@drawable/btn_power_off" android:layout_width="80dp" android:layout_height="80dp"/>
+        <TextView android:id="@+id/tv_plugin_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开发者模式已关闭"/>
+    </LinearLayout>
+</LinearLayout>

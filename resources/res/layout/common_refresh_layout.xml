@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/common_refresh_view" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView android:id="@+id/common_recycle_view" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent"/>
+</android.support.v4.widget.SwipeRefreshLayout>

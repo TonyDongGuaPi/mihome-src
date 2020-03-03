@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/jr_mipay_safe_keyboard_bar_bg" android:layout_width="match_parent" android:layout_height="38dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jr_mipay_safe_keyboard_bar_shield"/>
+        <TextView android:textSize="12dp" android:textColor="@color/jr_mipay_safe_keyboard_title_color" android:id="@+id/title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/jr_mipay_safe_keyboard_title"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/hide_imageview" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/jr_mipay_safe_keyboard_key_hide" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

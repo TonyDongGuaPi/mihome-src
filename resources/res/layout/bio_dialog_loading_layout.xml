@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/dialog_view" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ProgressBar android:id="@+id/reg_req_code_gif_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/bio_dialog_loading_anim_progress" android:indeterminateBehavior="repeat"/>
+</LinearLayout>

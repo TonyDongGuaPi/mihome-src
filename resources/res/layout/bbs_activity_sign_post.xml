@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mi.global.bbs.view.Editor.FontEditText android:textSize="16sp" android:textColor="#333333" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/emo_content" android:background="@color/white" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="200dp" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mi.global.bbs.view.CheckedTextView android:gravity="center_vertical" android:id="@+id/share_switch" android:paddingTop="16dp" android:paddingBottom="13dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_to_activities_feed" android:drawablePadding="10dp" android:drawableStart="@drawable/circle_checked" android:paddingStart="16dp"/>
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="13sp" android:textColor="@color/text_length_normal" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/num_indicate" android:layout_width="0dp" android:layout_height="wrap_content" android:text="200" android:layout_weight="1" android:paddingEnd="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/emo_icon" android:layout_width="76dp" android:layout_height="76dp" android:layout_marginTop="80dp"/>
+</LinearLayout>

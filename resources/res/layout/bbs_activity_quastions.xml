@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="13dp" android:src="@drawable/bbs_bglanse" android:scaleType="centerCrop"/>
+            <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bbs_rabbit"/>
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/step" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13dp"/>
+        </FrameLayout>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@+id/question_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="12dp"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="@color/main_yellow" android:gravity="center" android:id="@+id/hint_text" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:text="@string/not_here_request_to_add_your_city_here"/>
+        <View android:background="@color/divide_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_height"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/next" android:background="@drawable/send_bt_bg" android:paddingLeft="44dp" android:paddingTop="9dp" android:paddingRight="44dp" android:paddingBottom="9dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp" android:text="@string/bbs_next"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

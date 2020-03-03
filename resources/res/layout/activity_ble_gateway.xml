@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/list_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.smarthome.device.BleGatewayNestedScrollingParent android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/mesh_gateway_guide">
+        <LinearLayout android:orientation="vertical" android:id="@+id/head" android:background="@color/class_Q" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/module_a_3_title_bar_return_transparent_new"/>
+            <com.xiaomi.smarthome.device.HeightChangeableView android:id="@+id/refresh_wrapper" android:layout_width="match_parent" android:layout_height="0dp"/>
+            <FrameLayout android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/head_view_extend" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/head_image_extend" android:layout_width="112dp" android:layout_height="112dp" android:scaleType="fitCenter"/>
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/head_anim_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ble_gateway_head" android:scaleType="fitCenter" android:importantForAccessibility="no"/>
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/desc" android:paddingLeft="25dp" android:paddingTop="195dp" android:paddingRight="25dp" android:paddingBottom="27dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_ble_gateway_desc"/>
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="top" android:id="@+id/head_view_shrink" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0">
+                    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/head_image_shrink" android:layout_width="56dp" android:layout_height="56dp" android:scaleType="fitCenter"/>
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bluetooth_sequencen_device_00" android:scaleType="fitCenter" android:importantForAccessibility="no"/>
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.v7.widget.CardView android:layout_gravity="center" android:id="@+id/ble_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:layout_marginBottom="6dp" app:cardCornerRadius="10dp" app:contentPaddingBottom="6dp" app:contentPaddingLeft="12dp" app:contentPaddingRight="12dp" app:contentPaddingTop="8dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/black" android:id="@+id/tv_ble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/ble_mesh_switch_text"/>
+                    <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/btn_ble_switch" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    <TextView android:textColor="#7f7f7f" android:id="@+id/tv_ble_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/ble_mesh_switch_content" android:layout_below="@+id/btn_ble_switch"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.RecyclerView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_below="@+id/ble_switch"/>
+            <View android:id="@+id/view_list_layer" android:background="#4df6f6f6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ble_switch"/>
+            <com.xiaomi.smarthome.device.BleGatewayNestedScrollingChild android:orientation="vertical" android:id="@+id/empty_view_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ble_switch">
+                <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/ble_gateway_white_empty_view"/>
+            </com.xiaomi.smarthome.device.BleGatewayNestedScrollingChild>
+        </RelativeLayout>
+    </com.xiaomi.smarthome.device.BleGatewayNestedScrollingParent>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="#527acc" android:id="@+id/mesh_gateway_guide" android:paddingTop="23dp" android:paddingBottom="24dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mesh_gateway_guide" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

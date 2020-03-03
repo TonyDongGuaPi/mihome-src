@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:indeterminateOnly="true" style="@style/MiuiSupport.Widget.ProgressBar"/>
+        <TextView android:textSize="@dimen/jr_mipay_text_size_tiny" android:textColor="@color/jr_mipay_text_color_loading" android:id="@+id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Button android:textSize="@dimen/jr_mipay_text_size_tiny" android:textColor="#4a4a4a" android:id="@+id/button_retry" android:background="@drawable/jr_mipay_btn_retry" android:visibility="gone" android:layout_width="@dimen/jr_mipay_retry_button_width" android:layout_height="@dimen/jr_mipay_retry_button_height" android:layout_marginTop="20dp" android:text="@string/jr_mipay_retry"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.yp_ui.widget.MiViewPager android:id="@+id/image_list" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignWithParentIfMissing="true"/>
+    <com.xiaomi.yp_ui.widget.XMTitleBar android:id="@+id/title_bar" app:leftImage="@drawable/yp_btn_common_back" style="@style/TitleBar"/>
+    <FrameLayout android:id="@+id/already_select_layout" android:background="#1d1d1d" android:layout_width="match_parent" android:layout_height="70dp" android:layout_above="@+id/bottom_layout">
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@+id/already_select" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginRight="9dp"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/bottom_layout" android:background="@drawable/white" android:layout_width="match_parent" android:layout_height="53dp" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/confirm" android:background="@drawable/yp_bottom_yellow_button_back" android:layout_width="127dp" android:layout_height="match_parent" android:text="@string/select_ok" android:layout_alignParentRight="true" style="@style/BottomBar.BrandButton"/>
+    </RelativeLayout>
+</RelativeLayout>

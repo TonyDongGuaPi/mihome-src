@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:left="@dimen/mishopsdk_v6_common_listitem_padding" android:right="@dimen/mishopsdk_v6_common_listitem_padding">
+        <shape android:dither="true" android:shape="rectangle">
+            <solid android:color="#ffdddddd"/>
+        </shape>
+    </item>
+    <item android:bottom="1px">
+        <shape android:dither="true" android:shape="rectangle">
+            <corners android:radius="1dp"/>
+            <solid android:color="#ff999999"/>
+            <padding android:bottom="1px"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@drawable/shop_shadow_layer_bottom" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <View android:id="@+id/empty_view" android:background="@color/home_empty_title_view" android:layout_width="match_parent" android:layout_height="15dp"/>
+    <FrameLayout android:id="@+id/home_grid_header" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="40dp">
+        <com.mi.global.shop.widget.EasyTextView android:textSize="12sp" android:textColor="#888888" android:layout_gravity="center_vertical" android:id="@+id/home_grid_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/home_grid_header_image_title" android:layout_width="132dp" android:layout_height="match_parent" app:actualImageScaleType="0"/>
+    </FrameLayout>
+</LinearLayout>

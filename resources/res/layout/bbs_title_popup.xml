@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ListView android:id="@+id/title_list" android:background="@drawable/bbs_bg_title_pop" android:padding="3dp" android:focusable="false" android:descendantFocusability="blocksDescendants" android:layout_width="150dp" android:layout_height="match_parent" android:scrollingCache="false" android:divider="@color/f0_gray" android:dividerHeight="0.5dp" android:layout_marginEnd="14dp"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_4_title_bar_return_finish"/>
+    <include android:id="@+id/list_space" android:layout_width="match_parent" android:layout_height="@dimen/std_list_space_margin_top" android:layout_below="@+id/title_bar" layout="@layout/common_list_space_empty"/>
+    <ViewSwitcher android:id="@+id/vs_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/update_loading_view"/>
+        <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:scrollbarThumbVertical="@drawable/list_view_scroll_bar" android:scrollbarStyle="insideOverlay" android:id="@+id/list_group" android:focusable="true" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/transparent" android:drawSelectorOnTop="false" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/listview_divider_line" android:dividerHeight="1px" android:fastScrollEnabled="false"/>
+        </FrameLayout>
+    </ViewSwitcher>
+</LinearLayout>

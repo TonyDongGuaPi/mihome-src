@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/list_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_righttext"/>
+    <ScrollView android:background="@color/list_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@+id/import_device" android:layout="@layout/import_device" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp"/>
+            <include layout="@layout/tag_group_item_common_3"/>
+            <GridView android:gravity="center" android:id="@+id/grid_view" android:background="@color/white" android:paddingLeft="13dp" android:paddingTop="13dp" android:paddingRight="13dp" android:paddingBottom="12dp" android:focusable="false" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:verticalSpacing="10dp" android:numColumns="4"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

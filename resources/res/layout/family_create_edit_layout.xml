@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/title_bar_choose_common"/>
+    <com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshLinearLayout android:orientation="vertical" android:id="@+id/family_refresh_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/setting_item_single_line_without_icon_height">
+                    <TextView android:text="@string/family_member" style="@style/category_title"/>
+                    <View style="@style/item_underline"/>
+                </RelativeLayout>
+                <com.xiaomi.smarthome.library.common.widget.ExpandGridView android:gravity="center" android:id="@+id/family_member_grid_view" android:padding="22dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:numColumns="4"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/setting_item_single_line_without_icon_height">
+                    <TextView android:text="@string/family_device" style="@style/category_title"/>
+                    <View style="@style/item_underline"/>
+                </RelativeLayout>
+                <com.xiaomi.smarthome.library.common.widget.ExpandListView android:scrollbarStyle="outsideOverlay" android:id="@+id/device_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshLinearLayout>
+    <RelativeLayout android:id="@+id/bottom_delete_bar" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#e3e3e6" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/class_Y" android:gravity="center" android:id="@+id/delete_msg_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/delete" android:drawableTop="@drawable/delete_button" android:drawablePadding="4dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/main_banner_text_color_1" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/home_name_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/main_banner_text_color_1" android:id="@+id/more" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_edit_more" android:maxLines="1" android:paddingStart="10dp"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/more_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_top_more"/>
+</LinearLayout>

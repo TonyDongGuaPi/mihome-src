@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/item_post_layout" android:background="@drawable/newsbg_listpage" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutLocal">
+    <LinearLayout android:orientation="vertical" android:id="@+id/article_layout" android:paddingTop="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:paddingStart="@dimen/list_item_horizontal_padding" android:paddingEnd="@dimen/list_item_horizontal_padding">
+        <RelativeLayout android:id="@+id/info_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/tv_info_author_head" android:layout_width="27dp" android:layout_height="27dp" android:layout_marginTop="3dp" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_marginStart="4dp" android:layout_alignParentStart="true"/>
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_info_author_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:singleLine="true" android:layout_centerVertical="true" android:textDirection="locale" android:layout_marginStart="11dp" android:layout_toEndOf="@+id/tv_info_author_head"/>
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="12sp" android:textColor="#ff6700" android:gravity="center" android:id="@+id/tv_info_post_type" android:background="@drawable/list_item_post_border" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60dp" android:text="" android:layout_centerVertical="true" android:textDirection="locale" android:paddingStart="10dp" android:paddingEnd="10dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/article_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/layout_one_pic_article" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_top_article_image" android:background="@drawable/bbs_ic_pic_bg" android:layout_width="100dp" android:layout_height="73dp" android:layout_marginTop="13dp" android:scaleType="centerCrop" android:layout_alignParentEnd="true"/>
+                    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_one_article_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="" android:maxLines="4" android:lineSpacingExtra="10dp" android:textDirection="locale" android:layout_marginEnd="15dp" android:layout_toStartOf="@+id/iv_top_article_image"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/layout_more_pic_article" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_more_article_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="" android:maxLines="4" android:lineSpacingExtra="10dp" android:textDirection="locale"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/item_image_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_more_article_title">
+                        <ImageView android:id="@+id/item_image_0" android:scaleType="centerCrop" style="@style/item_image"/>
+                        <View style="@style/item_image_gap"/>
+                        <ImageView android:id="@+id/item_image_1" android:scaleType="centerCrop" style="@style/item_image"/>
+                        <View style="@style/item_image_gap"/>
+                        <ImageView android:id="@+id/item_image_2" android:scaleType="centerCrop" style="@style/item_image"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/layout_only_article" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+                    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_only_article_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="4" android:lineSpacingExtra="10dp" android:textDirection="locale"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/info_bottom_layout" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_layout">
+                <com.mi.global.bbs.view.Editor.FontTextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_publish_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:textDirection="locale" android:layout_alignParentStart="true"/>
+                <com.mi.global.bbs.view.Editor.FontTextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_comment_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawablePadding="10dp" android:layout_centerVertical="true" android:drawableStart="@drawable/bbs_ic_reply_count" android:textDirection="locale" android:layout_alignParentEnd="true"/>
+                <com.mi.global.bbs.view.Editor.FontTextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/tv_browse_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawablePadding="10dp" android:layout_centerVertical="true" android:drawableStart="@drawable/bbs_ic_view_count" android:textDirection="locale" android:layout_marginEnd="15dp" android:layout_toStartOf="@+id/tv_comment_count"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/item_divider" android:background="@color/divider_day" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+</RelativeLayout>

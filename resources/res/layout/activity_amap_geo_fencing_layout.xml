@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_righttext"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.amap.api.maps2d.MapView android:id="@+id/mapView" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:id="@+id/geo_fencing_circle" android:layout_width="200dp" android:layout_height="200dp" android:src="@drawable/geofencing_circle"/>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:weightSum="2">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:gravity="center" android:id="@+id/radius" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/my_location_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30dp" android:src="@drawable/my_location"/>
+        <RelativeLayout android:layout_gravity="top" android:id="@+id/search_places" android:background="@drawable/choose_device_search_bg" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp">
+            <ImageView android:id="@+id/search_places_image_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/choose_device_search" android:layout_centerVertical="true" android:contentDescription="@string/timezone_activity_search" android:layout_marginStart="5dp"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/choose_device_search_hint_color" android:id="@+id/search_places_tv" android:paddingLeft="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/choose_device_search_image_normal" android:layout_centerVertical="true" android:layout_toEndOf="@+id/choose_device_search_image_normal"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

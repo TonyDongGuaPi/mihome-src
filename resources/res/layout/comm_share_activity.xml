@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/class_A" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <WebView android:id="@+id/webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/imageview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+        <com.xiaomi.smarthome.library.common.widget.GridImageView android:id="@+id/grid_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/international_share_container" android:background="#f8f8f8" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/facebook_share" android:text="@string/smarthome_share_facebook" android:drawableTop="@drawable/share_facebook" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/line_share" android:text="@string/smarthome_share_line" android:drawableTop="@drawable/share_line" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/whatsapp_share" android:text="@string/smarthome_share_whatsapp" android:drawableTop="@drawable/share_whatsapp" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/copy_share_foreign" android:text="@string/smarthome_share_copyurl" android:drawableTop="@drawable/std_shop_details_share_icon_fzlj" style="@style/BaseShareItem"/>
+        </LinearLayout>
+    </FrameLayout>
+    <HorizontalScrollView android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp">
+            <TextView android:id="@+id/miliao_share" android:text="@string/smarthome_share_miliao" android:drawableTop="@drawable/std_shop_details_share_icon_ml" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/wx_share" android:text="@string/smarthome_share_wecaht" android:drawableTop="@drawable/std_shop_details_share_icon_wxhy" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/friends_share" android:text="@string/smarthome_share_wxcircle" android:drawableTop="@drawable/std_shop_details_share_icon_pyq" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/weibo_share" android:text="@string/smarthome_share_sinaweibo" android:drawableTop="@drawable/std_shop_details_share_icon_xlwb" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/qzone_share" android:visibility="gone" android:text="@string/smarthome_share_qzone" android:drawableTop="@drawable/std_shop_details_share_icon_qqkj" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/qq_share" android:visibility="gone" android:text="@string/smarthome_share_qq" android:drawableTop="@drawable/std_shop_details_share_icon_qq" style="@style/BaseShareItem"/>
+            <TextView android:id="@+id/copy_share" android:text="@string/smarthome_share_copyurl" android:drawableTop="@drawable/std_shop_details_share_icon_fzlj" style="@style/BaseShareItem"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

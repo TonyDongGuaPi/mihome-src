@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="60dp">
+    <FrameLayout android:id="@+id/device_icon_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/device_icon" android:layout_width="50dp" android:layout_height="50dp"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:src="@drawable/um_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/device_item_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toLeftOf="@+id/arrow" android:layout_toRightOf="@+id/device_icon_layout" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:textColor="#000000" android:ellipsize="end" android:gravity="left" android:layout_gravity="left" android:id="@+id/device_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/std_list_font_size_subtitle" android:textColor="#999999" android:gravity="left" android:layout_gravity="left" android:id="@+id/device_item_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp">
+    <View android:id="@+id/home_hot_list_item_fix_left" android:visibility="gone" android:layout_width="16dp" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/home_hot_list_item_layout" android:background="@drawable/home_banner_white_pressed_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/home_hot_item_img" android:layout_width="match_parent" android:layout_height="101dp" android:scaleType="centerCrop"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/home_hot_item_video_btn" android:background="@drawable/bbs_ic_home_video_start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="#222222" android:ellipsize="end" android:id="@+id/home_hot_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="2" android:lineSpacingMultiplier="1.2" android:textDirection="locale" app:textBounds="1"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="13sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/home_hot_item_des" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="2" android:lines="2" android:lineSpacingMultiplier="1.2" android:textDirection="locale"/>
+    </LinearLayout>
+    <View android:id="@+id/home_hot_list_item_fix_right" android:visibility="gone" android:layout_width="8dp" android:layout_height="match_parent"/>
+</LinearLayout>

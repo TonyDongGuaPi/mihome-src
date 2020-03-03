@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fragment_main" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbarThumbVertical="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_top_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/passport_sign_in_title"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:id="@+id/phone_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" app:hintEnabled="false">
+                        <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+                            <TextView android:gravity="center_vertical" android:id="@+id/passport_country_code_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+86" android:freezesText="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp_selector"/>
+                            <AutoCompleteTextView android:id="@+id/phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/phone_hint" android:inputType="number" android:imeOptions="actionUnspecified|flagNoFullscreen|flagNoExtractUi" android:layout_toEndOf="@+id/passport_country_code_text" style="?attr/editTextStyle"/>
+                            <ImageView android:id="@+id/delete_phone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/passport_delete_text" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+                <android.support.design.widget.TextInputLayout android:id="@+id/user_agreement_error_tip" android:layout_width="match_parent" android:layout_height="wrap_content" app:hintEnabled="false">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </android.support.design.widget.TextInputLayout>
+                <Button android:theme="@style/PassportButton" android:textSize="@dimen/passport_text_size" android:id="@+id/ph_sign_in_btn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginLeft="-4dp" android:layout_marginTop="20dp" android:layout_marginRight="-4dp" android:text="@string/passport_next_step" android:layout_marginStart="-4dp" android:layout_marginEnd="-4dp"/>
+                <RelativeLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/action_goto_psw_signin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/psw_sign_in" style="@style/PassportButtonBorderless"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/sign_in_sns_choose"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/sign_in_footer"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

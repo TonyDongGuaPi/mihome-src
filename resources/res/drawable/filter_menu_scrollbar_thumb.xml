@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:right="1px">
+        <shape>
+            <solid android:color="#aaa"/>
+            <corners android:radius="2dp"/>
+            <size android:height="10dp" android:width="3dp"/>
+        </shape>
+    </item>
+</layer-list>

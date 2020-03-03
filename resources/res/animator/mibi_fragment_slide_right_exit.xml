@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" android:interpolator="@android:interpolator/decelerate_quint" android:duration="@android:integer/config_mediumAnimTime" android:valueFrom="0dp" android:valueTo="510dp" android:valueType="floatType" android:propertyName="translationX"/>

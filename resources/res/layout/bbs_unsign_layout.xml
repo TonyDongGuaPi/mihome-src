@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <TextView android:textSize="15sp" android:textColor="#212121" android:gravity="center" android:id="@+id/unsign_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/how_is_your_day" android:textDirection="locale"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <ImageView android:id="@+id/face1_iv" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="@dimen/common_padding" android:layout_marginBottom="@dimen/common_padding" android:src="@drawable/happy_big" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+        <ImageView android:id="@+id/face2_iv" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="@dimen/common_padding" android:layout_marginBottom="@dimen/common_padding" android:src="@drawable/regular_big" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+        <ImageView android:id="@+id/face3_iv" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="@dimen/common_padding" android:layout_marginBottom="@dimen/common_padding" android:src="@drawable/sad_big" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="13sp" android:textColor="#999999" android:gravity="center" android:id="@+id/unsign_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:textDirection="locale"/>
+</merge>

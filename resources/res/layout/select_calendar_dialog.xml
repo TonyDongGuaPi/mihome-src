@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/select_calendar_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="13dp" android:layout_marginEnd="13dp">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="#222222" android:gravity="center" android:id="@+id/title" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/divide_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_height2"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.weigan.loopview.LoopView android:id="@+id/month_view" android:layout_width="0dp" android:layout_height="200dp" android:layout_weight="1" app:awv_centerTextColor="@color/main_yellow" app:awv_outerTextColor="@color/mission_subtitle_color" app:awv_textsize="13"/>
+            <View android:background="@color/divide_color" android:layout_width="@dimen/divide_height2" android:layout_height="match_parent"/>
+            <com.weigan.loopview.LoopView android:id="@+id/day_view" android:layout_width="0dp" android:layout_height="200dp" android:layout_weight="1" app:awv_centerTextColor="@color/main_yellow" app:awv_outerTextColor="@color/mission_subtitle_color" app:awv_textsize="13"/>
+        </LinearLayout>
+        <View android:background="@color/divide_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_height2"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13sp" android:textColor="#666666" android:gravity="center" android:id="@+id/cancel" android:background="@drawable/select_date_left_bt" android:paddingTop="14dp" android:paddingBottom="14dp" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1"/>
+            <View android:background="@color/divide_color" android:layout_width="@dimen/divide_height2" android:layout_height="match_parent"/>
+            <TextView android:textSize="13sp" android:textColor="@color/main_yellow" android:gravity="center" android:id="@+id/ok" android:background="@drawable/select_date_right_bt" android:paddingTop="14dp" android:paddingBottom="14dp" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/dialog_ask_ok" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

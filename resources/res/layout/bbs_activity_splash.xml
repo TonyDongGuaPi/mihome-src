@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <include layout="@layout/bbs_splash_layout"/>
+    <ImageView android:id="@+id/bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="#fff" android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/skip" android:background="@drawable/bbs_btn_skip" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/bbs_skip" android:textDirection="locale" android:paddingStart="12dp" android:paddingEnd="12dp" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+    <include layout="@layout/bbs_launch_info_layout"/>
+</FrameLayout>

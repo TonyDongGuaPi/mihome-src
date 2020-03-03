@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/outer_refresh_layout" android:background="@drawable/bbs_bg_task" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <ScrollView android:id="@+id/task_scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="false">
+        <include layout="@layout/bbs_mission_layout"/>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

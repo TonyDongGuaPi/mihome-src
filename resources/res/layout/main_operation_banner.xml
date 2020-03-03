@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.operation.mainpage.MainPagePopHelper xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="120dp">
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="10dp" app:cardElevation="0dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/banner_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/close" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="7dp" android:src="@drawable/banner_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</com.xiaomi.smarthome.operation.mainpage.MainPagePopHelper>

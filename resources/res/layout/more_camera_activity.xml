@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/camera_white_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/title_bar_transparent_black"/>
+        <include layout="@layout/list_line"/>
+    </LinearLayout>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_light" app:item_icon="@drawable/camera_setting_light_icon" app:item_line_margin="@dimen/line_margin" app:item_title="@string/setttings_light_title" app:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/only_wifi" app:item_icon="@drawable/setting_wifi_safe_icon" app:item_line_margin="0dp" app:item_subtitle="@string/setttings_only_wifi_tip" app:item_title="@string/setttings_only_wifi" app:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_power" app:item_icon="@drawable/camera_setting_sleep_icon" app:item_line_margin="@dimen/line_margin" app:item_title="@string/setting_sleep_setting" app:item_type="1" style="@style/setting_item"/>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_view" app:item_icon="@drawable/camera_setting_view_icon" app:item_line_margin="@dimen/line_margin" app:item_title="@string/setting_view" app:item_type="1" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_infrared" app:item_icon="@drawable/camera_setting_infrared_icon" app:item_line_margin="@dimen/line_margin" app:item_title="@string/setting_infared" app:item_type="1" style="@style/setting_item"/>
+    <View android:id="@+id/divider_line" android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_device_calibration" app:item_icon="@drawable/camera_icon_calibration" app:item_line_margin="@dimen/line_margin" app:item_title="@string/device_calibration" app:item_type="1" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_float_window" app:item_icon="@drawable/camera_icon_float_window" app:item_line_margin="@dimen/line_margin" app:item_title="@string/item_pip_new" app:item_type="1" style="@style/setting_item"/>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="15sp" android:textColor="@color/class_J" android:gravity="center" android:id="@+id/tvReset" android:background="@color/white" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/setting_restart"/>
+</LinearLayout>

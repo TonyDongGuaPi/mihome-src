@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/white_pressed_selector" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutLocal">
+    <include layout="@layout/following_item_common_top"/>
+    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="#222222" android:ellipsize="end" android:id="@+id/item_title" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale" android:paddingEnd="16dp" android:layout_marginStart="57dp" app:textBounds="1"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginStart="57dp" android:layout_marginEnd="16dp">
+        <ImageView android:id="@+id/item_pic_1" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1"/>
+        <View android:layout_width="4dp" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/item_pic_2" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1"/>
+        <View android:layout_width="4dp" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/item_pic_3" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.mi.global.bbs.view.LikeAndCommentView android:layout_gravity="start" android:id="@+id/view_like_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="45dp" android:layout_marginEnd="13dp"/>
+    <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

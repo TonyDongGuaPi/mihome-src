@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/activity_my_favor" android:background="#f2f1ee" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/bbs_common_refresh_layout"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/activity_post_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <include layout="@layout/bbs_layout_post_detail_failed"/>
+        <include layout="@layout/bbs_layout_post_deleted"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/web_activity_bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/user_center_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/bbs_comments_layout"/>
+            <include layout="@layout/bbs_web_activity_bottom_layout"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="244dp" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/button_left" android:background="@drawable/btn_minus" android:layout_width="43.33dp" android:layout_height="43.33dp" android:layout_marginRight="6.67dp" android:scaleType="fitCenter" android:layout_toLeftOf="@+id/button_center"/>
+    <com.xiaomi.smarthome.newui.widget.RoundedHorizontalSeekBar android:id="@+id/button_center" android:layout_width="143.34dp" android:layout_height="43.33dp" android:layout_centerInParent="true" app:bg_color_my="#fff2f2f2" app:progress_color_my="#ff0099ff" app:text_color_my="#ffffffff" app:text_padding_left_my="16.33dp" app:text_size_my="10.67sp"/>
+    <ImageView android:id="@+id/button_right" android:background="@drawable/btn_plus" android:layout_width="43.33dp" android:layout_height="43.33dp" android:layout_marginLeft="6.67dp" android:scaleType="fitCenter" android:layout_toRightOf="@+id/button_center"/>
+</RelativeLayout>

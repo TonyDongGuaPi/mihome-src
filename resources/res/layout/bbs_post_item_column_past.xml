@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rel_layout_column_past" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp">
+    <ImageView android:id="@+id/past_column_bg" android:layout_width="match_parent" android:layout_height="105dp" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <FrameLayout android:background="@drawable/black_round_alpha_shape" android:layout_width="match_parent" android:layout_height="105dp">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="left" android:layout_gravity="center" android:id="@+id/post_column_past_subject" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="1.5sp" android:textDirection="locale" android:layout_marginStart="50dp" android:layout_marginEnd="50dp"/>
+    </FrameLayout>
+</RelativeLayout>

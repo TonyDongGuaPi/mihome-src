@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/camera_white_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/title_bar_transparent_black"/>
+        <include layout="@layout/list_line"/>
+    </LinearLayout>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/watermark" app:item_icon="@drawable/camera_setting_watermark_icon" app:item_line_margin="@dimen/line_margin" app:item_title="@string/setttings_watermark_title" app:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/correct_lens_distort" app:item_icon="@drawable/camera_setting_distort_icon" app:item_line_margin="@dimen/line_margin" app:item_title="@string/setttings_correct_lens_distort_title" app:item_type="2" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_wdr" android:layout_marginTop="@dimen/title_margin_top" app:item_icon="@drawable/camera_setting_wdr_icon" app:item_line_margin="@dimen/line_margin" app:item_title="@string/setting_wdr" app:item_type="1" style="@style/setting_item"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/settings_rote" app:item_icon="@drawable/camera_setting_rote_icon" app:item_line_margin="@dimen/line_margin" app:item_title="@string/setting_rote" app:item_type="1" style="@style/setting_item"/>
+</LinearLayout>

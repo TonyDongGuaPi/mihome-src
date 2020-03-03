@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.voice.microaudio.viewutil.MicroCommunicationView xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/micro_communication_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textColor="@color/white_50_transparent" android:id="@+id/micro_communication_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/micro_communication" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/micro_tips_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:paddingBottom="40dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mi_brain_tips1"/>
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/micro_tips_2" style="@style/MicroTipsTextStyle"/>
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/micro_tips_3" style="@style/MicroTipsTextStyle"/>
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/micro_tips_4" style="@style/MicroTipsTextStyle"/>
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/micro_tips_5" style="@style/MicroTipsTextStyle"/>
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/micro_tips_6" style="@style/MicroTipsTextStyle"/>
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/micro_tips_7" style="@style/MicroTipsTextStyle"/>
+    </LinearLayout>
+</com.xiaomi.smarthome.voice.microaudio.viewutil.MicroCommunicationView>

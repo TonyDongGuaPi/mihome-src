@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/video_view_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/video_view_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/btn_large_view" android:background="@drawable/camera_title_background" android:layout_width="match_parent" android:layout_height="44dp">
+            <ImageView android:id="@+id/ivExitFullscreenButton" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/all_camera_item_exit_full_screen" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            <ImageView android:id="@+id/mute_button" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginRight="30dp" android:src="@drawable/camera_icon_btn_vocal" android:scaleType="center" android:layout_toLeftOf="@+id/ivExitFullscreenButton" android:layout_marginEnd="30dp" android:layout_toStartOf="@+id/ivExitFullscreenButton"/>
+            <ImageView android:id="@+id/pause_button" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginRight="30dp" android:src="@drawable/camera_icon_btn_vocal" android:scaleType="center" android:layout_toLeftOf="@+id/mute_button" android:layout_marginEnd="30dp" android:layout_toStartOf="@+id/mute_button"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/control_indicator" android:background="@drawable/camera_title_background_bottom" android:layout_width="match_parent" android:layout_height="44dp" android:paddingStart="@dimen/size_10dp" android:paddingEnd="@dimen/size_10dp">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/cloud_storage_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/tvStatus" android:background="@drawable/camera_icon_device_status_big_bg" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/white" android:ellipsize="none" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="3" android:singleLine="true" android:layout_centerVertical="true" android:layout_toEndOf="@+id/tvStatus"/>
+                <View android:id="@+id/line" android:background="#99ffffff" android:layout_width="0.5dp" android:layout_height="10dp" android:layout_centerVertical="true" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_toEndOf="@+id/title"/>
+                <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true" android:layout_toEndOf="@+id/line"/>
+                <ImageView android:id="@+id/device_controller" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_large_view_into" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/camera_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/ivPlayCenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_camera_play_center"/>
+    </FrameLayout>
+</LinearLayout>

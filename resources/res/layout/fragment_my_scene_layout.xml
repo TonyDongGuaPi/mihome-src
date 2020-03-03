@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/std_main_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshLinearLayout android:orientation="vertical" android:id="@+id/home_scene_refresh_ll" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/list_space" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <com.xiaomi.smarthome.lite.scene.HomeSceneScrollView android:id="@+id/home_scene_scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textColor="@color/class_D" android:gravity="center" android:id="@+id/filter_tv" android:background="@drawable/my_scene_filter_tv_bg_selector" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="17dp" android:layout_marginTop="11dp" android:layout_marginRight="17dp" android:layout_marginBottom="11dp" android:text="@string/smarthome_scene_create_filter" android:layout_marginStart="17dp" android:layout_marginEnd="17dp"/>
+                <TextView android:textSize="15sp" android:textColor="@color/class_Y" android:gravity="center_vertical" android:id="@+id/hand_tv" android:background="@color/white" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/smarthome_new_scene_by_hand" android:drawableLeft="@drawable/lite_scene_hand_icon" android:drawablePadding="5dp"/>
+                <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="0.33dp" android:layout_alignParentBottom="true"/>
+                <android.support.v7.widget.RecyclerView android:id="@+id/scene_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/hand_tv"/>
+                <View android:id="@+id/auto_place_view" android:layout_width="match_parent" android:layout_height="20dp"/>
+                <TextView android:textSize="15sp" android:textColor="@color/class_Y" android:gravity="center_vertical" android:id="@+id/auto_tv" android:background="@color/white" android:paddingLeft="13dp" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/smarthome_new_scene_auto" android:drawableLeft="@drawable/auto_scene_icon" android:drawablePadding="5dp" android:layout_below="@+id/scene_rv"/>
+                <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="0.33dp" android:layout_alignParentBottom="true"/>
+                <android.support.v7.widget.RecyclerView android:id="@+id/lv_scenes" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <View android:id="@+id/place_holder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="49dp"/>
+            </LinearLayout>
+        </com.xiaomi.smarthome.lite.scene.HomeSceneScrollView>
+    </com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshLinearLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="66dp" layout="@layout/common_white_empty_view_new"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/title_bar_choose_device"/>
+    <include android:layout_width="match_parent" android:layout_height="93dp" android:layout_alignParentBottom="true" layout="@layout/edit_action_bar_scene"/>
+</RelativeLayout>

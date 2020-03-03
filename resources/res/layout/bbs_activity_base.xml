@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parentView" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/content_base" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/toolbar_container" android:background="@color/main_title_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/toolbar_agent" android:layout_width="match_parent" android:layout_height="12dp"/>
+            <include layout="@layout/bbs_app_title_bar"/>
+            <View android:id="@+id/toolbar_divider" android:background="@color/divide_color" android:layout_width="match_parent" android:layout_height="@dimen/divide_height"/>
+            <ProgressBar android:id="@+id/activity_progressBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/browser_progressbar_height" android:progressDrawable="@drawable/web_view_progress_bar" style="?android:attr/progressBarStyleHorizontal"/>
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/floating_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="166dp" android:layout_marginEnd="16dp"/>
+</FrameLayout>

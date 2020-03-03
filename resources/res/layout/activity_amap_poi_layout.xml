@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_righttext"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_poi" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@drawable/choose_device_search_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:minHeight="30dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/choose_device_search" android:layout_centerVertical="true" android:contentDescription="@string/timezone_activity_search" android:layout_marginStart="5dp"/>
+            <EditText android:textSize="@dimen/font_size_12sp" android:textColor="@color/choose_device_search_hint_color" android:id="@+id/search_et" android:background="@color/transparent" android:paddingLeft="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/search_loc" android:maxLines="1" android:layout_toRightOf="@+id/choose_device_search_image_normal" android:layout_centerVertical="true" android:layout_toEndOf="@+id/choose_device_search_image_normal"/>
+        </RelativeLayout>
+        <ListView android:id="@+id/lv_data" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+    </LinearLayout>
+</LinearLayout>

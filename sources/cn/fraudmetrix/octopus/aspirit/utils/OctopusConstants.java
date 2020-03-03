@@ -1,0 +1,60 @@
+package cn.fraudmetrix.octopus.aspirit.utils;
+
+public class OctopusConstants {
+    public static final String A = "octopus_result_code";
+    public static final String B = "octopus_result_taskid";
+    public static final String C = "https://taskid";
+    public static final String D = "real_name";
+    public static final String E = "user_mobile";
+    public static final String F = "identity_code";
+    public static final String G = "passback_params";
+    public static final int H = 1000;
+    public static final int I = 0;
+    public static final int J = 1;
+    public static final int K = 10;
+    public static final int L = 11;
+    public static final int M = 12;
+    public static final int N = 20;
+    public static final int O = 21;
+    public static final int P = 22;
+    public static final int Q = 23;
+    public static final int R = 24;
+    public static final int S = 25;
+    public static final int T = 26;
+    public static final int U = 30;
+    public static final int V = 31;
+    public static final int W = 40;
+    public static final int X = 41;
+    public static final int Y = 50;
+    public static final int Z = 1100;
+
+    /* renamed from: a  reason: collision with root package name */
+    public static int f650a = 15;
+    public static final int aa = -1;
+    public static final int ab = 0;
+    public static int b = 40;
+    public static int c = 1000;
+    public static final String d = "octopus_intent_data";
+    public static final String e = "octopus_sdk_event_log";
+    public static final String f = "octopus_intent_id";
+    public static final String g = "octopus_intent_msg";
+    public static final String h = "octopus_intent_param";
+    public static final String i = "octopus_intent_obj";
+    public static final String j = "cn.fraudmetrix.octopus.aspirit";
+    public static final String k = "octopus_crash";
+    public static final String l = "octopus_device_info";
+    public static final String m = "octopus_taskid";
+    public static final String n = "octopus_username";
+    public static final String o = "octopus_current_data";
+    public static final String p = "octopus_OLD_data";
+    public static final String q = "octopus_crash_time";
+    public static final String r = "octopus_state";
+    public static final String s = "octopus_channel_info";
+    public static final String t = "data";
+    public static final String u = "path";
+    public static final String v = "is_common_params";
+    public static final String w = "is_user_params";
+    public static final String x = "task_id";
+    public static final String y = "octopus_prefs_file";
+    public static int z;
+}

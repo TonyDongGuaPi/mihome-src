@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="false">
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_01"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_02"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_03"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_04"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_05"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_06"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_07"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_08"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_09"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_10"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_11"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_12"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_13"/>
+    <item android:duration="100" android:drawable="@drawable/bluetooth_sequencen_device_14"/>
+</animation-list>

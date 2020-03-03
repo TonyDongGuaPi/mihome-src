@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="air_desc_detail">
+        <item quantity="other">近くの %s デバイスの平均データ</item>
+    </plurals>
+    <plurals name="automation_day">
+        <item quantity="other">%d日</item>
+    </plurals>
+    <plurals name="automation_hour">
+        <item quantity="other">%d時</item>
+    </plurals>
+    <plurals name="automation_minute">
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="automation_seconds">
+        <item quantity="other">%d秒</item>
+    </plurals>
+    <plurals name="banner_camera_count">
+        <item quantity="other">%d 個のアイテム</item>
+    </plurals>
+    <plurals name="before_minute">
+        <item quantity="other">%d分前</item>
+    </plurals>
+    <plurals name="ble_mesh_add_succ_size">
+        <item quantity="other">%1$s個のデバイスが追加されました</item>
+    </plurals>
+    <plurals name="button_bind_tips">
+        <item quantity="other">接続するには、任意のボタンを %d 秒間タップしてください</item>
+    </plurals>
+    <plurals name="choose_device_device_count">
+        <item quantity="other">%1$d 個のデバイス</item>
+    </plurals>
+    <plurals name="choose_device_device_counts">
+        <item quantity="other">%1$d 個のデバイス</item>
+    </plurals>
+    <plurals name="common_edit_camera_size">
+        <item quantity="other">%d台のスマートカメラ</item>
+    </plurals>
+    <plurals name="count_down_minute">
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="delete_msg">
+        <item quantity="other">選択された %1$s 件のメッセージを削除しますか?</item>
+    </plurals>
+    <plurals name="delete_record">
+        <item quantity="other">選択中の%1$s個の記録を削除しますか？</item>
+    </plurals>
+    <plurals name="device_init_bubble_tips">
+        <item quantity="other">%d台の新しいスマートデバイスをクリックして設定する</item>
+    </plurals>
+    <plurals name="device_room_count_tips">
+        <item quantity="other">部屋に割り当てられていないデバイスが%1$s台あります</item>
+    </plurals>
+    <plurals name="dialog_title_confirm_delete_device">
+        <item quantity="other">%1$s の選択済みデバイスを削除しますか?</item>
+    </plurals>
+    <plurals name="distance_in_meter">
+        <item quantity="other">%1$sメートル</item>
+    </plurals>
+    <plurals name="drag_tips">
+        <item quantity="other">全てのデバイスをドラッグ＆ドロップして順番を調整し、上の%d台のデバイスはカードに表示される</item>
+    </plurals>
+    <plurals name="edit_choosed_device">
+        <item quantity="other">%1$d が選択されました</item>
+    </plurals>
+    <plurals name="edit_choosed_room">
+        <item quantity="other">%1$s が選択されました</item>
+    </plurals>
+    <plurals name="etc">
+        <item quantity="other">%1$s%2$s 等</item>
+    </plurals>
+    <plurals name="family_share_count">
+        <item quantity="other">%d 個の共有デバイス</item>
+    </plurals>
+    <plurals name="family_share_device_count">
+        <item quantity="other">%s デバイスが共有されました</item>
+    </plurals>
+    <plurals name="feedback_contact_length_tips">
+        <item quantity="other">連絡先情報は %1$d 文字以内で指定してください</item>
+    </plurals>
+    <plurals name="feedback_content_length_tips">
+        <item quantity="other">フィードバックは %1$d 文字以内で指定してください</item>
+    </plurals>
+    <plurals name="fireware_update_size">
+        <item quantity="other">%1$s個のアップデート対象ファームウェア</item>
+    </plurals>
+    <plurals name="fireware_update_succ_size">
+        <item quantity="other">%1$s個のファームウェアのアップデートが完了しました</item>
+    </plurals>
+    <plurals name="home_cloud_will_end_tip">
+        <item quantity="other">クラウドストレージサービスは%1$d日後に期限切れとなります。クリックして更新してください</item>
+    </plurals>
+    <plurals name="home_device_size">
+        <item quantity="other">%1$s台のデバイス</item>
+    </plurals>
+    <plurals name="home_room_size">
+        <item quantity="other">%1$s個の部屋</item>
+    </plurals>
+    <plurals name="ir_device_count">
+        <item quantity="other">%d 個のリモート制御デバイス</item>
+    </plurals>
+    <plurals name="ir_device_count_1">
+        <item quantity="other">%1$d 個のデバイス</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_complete">
+        <item quantity="other">%d 個のデバイスが接続されました</item>
+    </plurals>
+    <plurals name="kuailian_sub_main_device_finish">
+        <item quantity="other">%d 個のスマート デバイスが見つかりました。終了するには、タップしてください</item>
+    </plurals>
+    <plurals name="light_group_child_max_size">
+        <item quantity="other">ライトユニットは最大で%1$s個の電球から構成されます。</item>
+    </plurals>
+    <plurals name="list_item_plugin_only">
+        <item quantity="one">%d 個のプラグインに対する更新プログラムが公開されています</item>
+        <item quantity="other">%d 個のプラグインに対する更新プログラムが公開されています</item>
+    </plurals>
+    <plurals name="miband_hour">
+        <item quantity="other">%d 時間</item>
+    </plurals>
+    <plurals name="miband_minute">
+        <item quantity="other">%d 分</item>
+    </plurals>
+    <plurals name="miio_bluetooth_gateway_count">
+        <item quantity="other">近くに使用可能デバイスが %1$d 個あります</item>
+    </plurals>
+    <plurals name="miui_online_device_count">
+        <item quantity="other">オンライン状態のデバイス: %d</item>
+    </plurals>
+    <plurals name="more_device">
+        <item quantity="one">%1$s デバイス プラグインを待っています:</item>
+        <item quantity="other">%1$s デバイス プラグインを待っています:</item>
+    </plurals>
+    <plurals name="msg_center_new_msg_tip">
+        <item quantity="other">%d 件の新しいメッセージを受信しました</item>
+    </plurals>
+    <plurals name="multikey_keyname_more">
+        <item quantity="other">ボタン%d</item>
+    </plurals>
+    <plurals name="my_phone_ir_desc_count">
+        <item quantity="other">%1$d 個のデバイスが追加されました</item>
+    </plurals>
+    <plurals name="near_find_more_device">
+        <item quantity="other">より多くの周辺デバイス(%1$d)</item>
+    </plurals>
+    <plurals name="room_xiaoai_count">
+        <item quantity="other">%1$s個のアイちゃん</item>
+    </plurals>
+    <plurals name="router_download_progress">
+        <item quantity="one">ダウンロードしています (%1$d%%)</item>
+        <item quantity="other">ダウンロードしています (%1$d%%)</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_day">
+        <item quantity="other">%d天後オンにする</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_hour">
+        <item quantity="other">%d時後オンにする</item>
+    </plurals>
+    <plurals name="scene_timer_hint_open_only_minute">
+        <item quantity="other">%d分後オンにする</item>
+    </plurals>
+    <plurals name="score_sign_get_score_fmt">
+        <item quantity="other">チェックインして%1$d ポイントを取得する</item>
+    </plurals>
+    <plurals name="score_sign_tomorrow_desc_part1">
+        <item quantity="other">明日チェックインして%1$d ポイントを取得する</item>
+    </plurals>
+    <plurals name="score_sign_tomorrow_desc_part2">
+        <item quantity="other">%d ポイントを取得しました</item>
+    </plurals>
+    <plurals name="score_total_score_fmt">
+        <item quantity="other">%d ポイント</item>
+    </plurals>
+    <plurals name="selected_cnt_tips">
+        <item quantity="other">%1$s が選択されました</item>
+    </plurals>
+    <plurals name="setting_total_device">
+        <item quantity="other">%1$d 個のデバイス</item>
+    </plurals>
+    <plurals name="share_wx_device_title_2">
+        <item quantity="other">%1$s およびその他のデバイス (%2$d 個のデバイス)</item>
+    </plurals>
+    <plurals name="smartgroup_data_source">
+        <item quantity="other">近くの %1$s デバイスの\10平均データ</item>
+    </plurals>
+    <plurals name="smarthome_has_shared_to_user_more">
+        <item quantity="other">%1$s およびその他の人と共有されています (%2$d 人)</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_min">
+        <item quantity="other">%d 分後</item>
+    </plurals>
+    <plurals name="smarthome_scene_delay_detal_sec">
+        <item quantity="other">%d 秒後</item>
+    </plurals>
+    <plurals name="tag_contain_title">
+        <item quantity="other">%d 個が含まれました</item>
+    </plurals>
+    <plurals name="tag_selected_title">
+        <item quantity="other">%d 個が選択されました</item>
+    </plurals>
+    <plurals name="timer_day">
+        <item quantity="other">%d 日</item>
+    </plurals>
+    <plurals name="timer_hint_close_only_day">
+        <item quantity="other">%dd 間オフにする</item>
+    </plurals>
+    <plurals name="timer_hint_close_only_hour">
+        <item quantity="other">%dh 間オフにする</item>
+    </plurals>
+    <plurals name="timer_hint_close_only_minute">
+        <item quantity="other">%dm 間オフにする</item>
+    </plurals>
+    <plurals name="timer_hint_open_only_day">
+        <item quantity="other">%d天後オンにする</item>
+    </plurals>
+    <plurals name="timer_hint_open_only_hour">
+        <item quantity="other">%d天後オンにする</item>
+    </plurals>
+    <plurals name="timer_hint_open_only_minute">
+        <item quantity="other">%d分後オンにする</item>
+    </plurals>
+    <plurals name="timer_hour">
+        <item quantity="other">%d 時間</item>
+    </plurals>
+    <plurals name="timer_minute">
+        <item quantity="other">%d 分</item>
+    </plurals>
+    <plurals name="timer_seconds">
+        <item quantity="other">%d 秒</item>
+    </plurals>
+    <plurals name="top_widget_camera_num">
+        <item quantity="other">%d台のカメラ</item>
+    </plurals>
+    <plurals name="upgrade_pkg_downloaded_is_downloading">
+        <item quantity="one">ダウンロードしています…%1$d</item>
+        <item quantity="other">ダウンロードしています…%1$d</item>
+    </plurals>
+    <plurals name="voice_another_name_max">
+        <item quantity="other">各デバイスには最大%1$s個の音声用別名を付けられます</item>
+    </plurals>
+    <plurals name="wifi_scan_new_device">
+        <item quantity="other">%1$d 個の %2$s が見つかりました。接続するにはタップしてください</item>
+    </plurals>
+    <plurals name="wifi_scan_new_plug">
+        <item quantity="other">%1$d 個のデバイスが見つかりました。接続するにはタップしてください</item>
+    </plurals>
+</resources>

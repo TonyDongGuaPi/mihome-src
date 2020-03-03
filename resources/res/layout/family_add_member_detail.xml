@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="75dp" android:layout_marginTop="75dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:padding="1dp" android:layout_width="66dp" android:layout_height="66dp" android:src="@drawable/std_family_icon_head"/>
+        <ImageView android:id="@+id/icon_confirm" android:background="@drawable/std_family_icon_confirm" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/black_80_transparent" android:layout_gravity="center_horizontal" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/family_member"/>
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="80dp" android:layout_height="30dp" android:layout_marginTop="10dp">
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/black_80_transparent" android:textColorHint="@color/black_20_transparent" android:gravity="center" android:id="@+id/nick_name" android:background="@drawable/family_member_nick_name" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/family_add_nick_name_hint" android:maxLines="1"/>
+        <EditText android:textSize="@dimen/font_size_13sp" android:textColor="@color/black_80_transparent" android:textColorHint="@color/black_20_transparent" android:gravity="center" android:id="@+id/nick_name_edit" android:background="@drawable/std_family_button_remarks_normal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/family_nick_name_hint" android:maxLines="1" android:inputType="text" android:imeOptions="actionDone"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fast_nick_name_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/black_50_transparent" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginTop="25dp" android:text="@string/family_nick_name_label" android:layout_marginStart="26dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginLeft="26dp" android:layout_marginTop="6dp" android:layout_marginRight="26dp" android:layout_marginStart="26dp" android:layout_marginEnd="26dp">
+            <TextView android:id="@+id/nick_name_husband" android:text="@string/family_nick_name_husband" style="@style/family_nick_name_style"/>
+            <View android:layout_width="12dp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/nick_name_wife" android:text="@string/family_nick_name_wife" style="@style/family_nick_name_style"/>
+            <View android:layout_width="12dp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/nick_name_father" android:text="@string/family_nick_name_father" style="@style/family_nick_name_style"/>
+            <View android:layout_width="12dp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/nick_name_mother" android:text="@string/family_nick_name_mother" style="@style/family_nick_name_style"/>
+            <View android:layout_width="12dp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/nick_name_son" android:text="@string/family_nick_name_son" style="@style/family_nick_name_style"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/btn_add_member" android:background="@drawable/family_normal_button" android:text="@string/family_add_member_immediately" style="@style/single_bottom_button_white"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/btn_continue_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="23dp">
+            <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btn_continue_add" android:background="@drawable/std_family_button_left_normal" android:padding="1dp" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:text="@string/family_add_continue" android:layout_weight="1" android:layout_marginStart="20dp"/>
+            <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btn_add_complete" android:background="@drawable/std_family_button_right_normal" android:padding="1dp" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginRight="20dp" android:text="@string/family_complete" android:layout_weight="1" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

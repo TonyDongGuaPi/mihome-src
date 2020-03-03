@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/iv_home_ga_item" android:background="@drawable/bbs_ic_pic_bg" android:layout_width="match_parent" android:layout_height="200dp" android:scaleType="fitXY"/>

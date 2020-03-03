@@ -1,0 +1,92 @@
+package com.xiaomi.account.openauth.internal;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.provider.Settings;
+import android.telephony.TelephonyManager;
+import android.text.TextUtils;
+import com.xiaomi.accountsdk.service.DeviceInfoResult;
+import java.util.UUID;
+
+public class HashedDeviceIdUtil {
+    private static final String ANDROID_ID = "android_id_";
+    private static final String PSEUDO_DEVICE_ID_PREFIX = "android_pseudo_";
+    private static final String SP_KEY_HASHED_DEVICE_ID = "hashedDeviceId";
+    private static final String SP_NAME_DEVICE_ID = "deviceId";
+    private static final String TAG = "HashedDeviceIdUtil";
+    private final Context mContext;
+
+    public HashedDeviceIdUtil(Context context) {
+        this.mContext = context;
+    }
+
+    public String getHashedDeviceIdNoThrow() {
+        String loadHistoricalHashedDeviceId = loadHistoricalHashedDeviceId();
+        if (legal(loadHistoricalHashedDeviceId)) {
+            return loadHistoricalHashedDeviceId;
+        }
+        String deviceIdHashed = getDeviceIdHashed();
+        if (deviceIdHashed != null) {
+            saveHistoricalHashedDeviceId(deviceIdHashed);
+            return deviceIdHashed;
+        }
+        String androidId = getAndroidId();
+        if (legal(androidId)) {
+            saveHistoricalHashedDeviceId(androidId);
+            return androidId;
+        }
+        String createPseudoDeviceId = createPseudoDeviceId();
+        saveHistoricalHashedDeviceId(createPseudoDeviceId);
+        return createPseudoDeviceId;
+    }
+
+    private String createPseudoDeviceId() {
+        return String.format("%s%s", new Object[]{PSEUDO_DEVICE_ID_PREFIX, UUID.randomUUID().toString()});
+    }
+
+    private String loadHistoricalHashedDeviceId() {
+        SharedPreferences sp = getSP();
+        if (sp == null) {
+            return null;
+        }
+        return sp.getString(SP_KEY_HASHED_DEVICE_ID, (String) null);
+    }
+
+    private SharedPreferences getSP() {
+        if (this.mContext == null) {
+            return null;
+        }
+        return this.mContext.getSharedPreferences("deviceId", 0);
+    }
+
+    private void saveHistoricalHashedDeviceId(String str) {
+        SharedPreferences sp = getSP();
+        if (sp != null) {
+            sp.edit().putString(SP_KEY_HASHED_DEVICE_ID, str).commit();
+        }
+    }
+
+    private String getDeviceIdHashed() {
+        try {
+            String deviceId = getDeviceId();
+            if (legal(deviceId)) {
+                return DeviceIdHasher.hashDeviceInfo(deviceId);
+            }
+            return null;
+        } catch (SecurityException unused) {
+            return null;
+        }
+    }
+
+    private String getDeviceId() {
+        return ((TelephonyManager) this.mContext.getSystemService("phone")).getDeviceId();
+    }
+
+    private String getAndroidId() {
+        return String.format("%s%s", new Object[]{ANDROID_ID, Settings.Secure.getString(this.mContext.getContentResolver(), DeviceInfoResult.BUNDLE_KEY_ANDROID_ID)});
+    }
+
+    private boolean legal(String str) {
+        return !TextUtils.isEmpty(str);
+    }
+}

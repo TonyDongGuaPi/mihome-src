@@ -1,0 +1,64 @@
+package com.ximalaya.ting.android.opensdk.constants;
+
+public interface PreferenceConstantsInOpenSdk {
+    public static final String A = "history_play_index";
+    public static final String B = "status_bar_height";
+    public static final String C = "recommend_flow_data";
+    public static final String D = "loadingAd_list";
+    public static final String E = "home_bottom_ad";
+    public static final String F = "jingpin_pop";
+    public static final String G = "home_pop";
+    public static final String H = "is_push_all";
+    public static final String I = "isPush";
+    public static final String J = "editorPush";
+    public static final String K = "exclusivePush";
+    public static final String L = "pushSubscribe";
+    public static final String M = "pushQura";
+    public static final String N = "pushLive";
+    public static final String O = "pushComment";
+    public static final String P = "preloginway";
+    public static final String Q = "loginforesult";
+    public static final String R = "account";
+    public static final String S = "password";
+    public static final String T = "timeline";
+    public static final String U = "will_post_dynamic_list";
+    public static final String V = "sina_access_token";
+    public static final String W = "token";
+    public static final String X = "partyId";
+    public static final String Y = "order_status";
+    public static final String Z = "update_order_status";
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final String f1857a = "crash_times_in_ten";
+    public static final String aa = "proxy_server";
+    public static final String ab = "choose_mobile_type";
+    public static final String ac = "phone_number";
+    public static final String ad = "phone_imsi";
+    public static final String ae = "app_start_count";
+    public static final String af = "check_ad_content";
+    public static final String b = "total_play_sec";
+    public static final String c = "listenedTimeBeforeAppraised";
+    public static final String d = "is_time_to_appraised";
+    public static final String e = "has_pop_appraised";
+    public static final String f = "downloadedSize";
+    public static final String g = "downloadedSize";
+    public static final String h = "play_history_record";
+    public static final String i = "play_track_history_record";
+    public static final String j = "xmplayer_config";
+    public static final String k = "KEY_USE_SYSTEM_PLAYER";
+    public static final String l = "KEY_BREAKPOINT_RESUME";
+    public static final String m = "KEY_USE_RADIO_HIGH_BITRATE";
+    public static final String n = "KEY_USE_TRACK_HIGH_BITRATE";
+    public static final String o = "KEY_SDK_HANDLE_AUDIO_FOCUS";
+    public static final String p = "KEY_SDK_HANDLE_PHONECOME_AUDIO_FOCUS";
+    public static final String q = "KEY_SDK_HANDLE_HEADSET_PLUG_AUDIO_FOCUS";
+    public static final String r = "KEY_SDK_RECEVICE_AUDIO_FOCUS_TYPE_DUCK_VOLUME";
+    public static final String s = "OPENSDK_KEY_SDK_USE_PREVENT_HIJACK";
+    public static final String t = "OPENSDK_KEY_SDK_USE_SYSTEM_LOCK_SCREEN";
+    public static final String u = "ting_data";
+    public static final String v = "user_one_date_data";
+    public static final String w = "isOnForPlan";
+    public static final String x = "delay_minutes_index";
+    public static final String y = "plan_play_stop_time";
+    public static final String z = "history_play_list";
+}

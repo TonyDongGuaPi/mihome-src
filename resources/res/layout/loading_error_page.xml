@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/error_page_image" android:background="@drawable/error_page" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="15dp" android:textColor="#000a1f" android:id="@+id/error_page_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/error_page_msg_no_network" android:includeFontPadding="false" android:lineSpacingExtra="1dp"/>
+        <TextView android:textSize="12dp" android:textColor="#66000a1f" android:id="@+id/error_page_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/error_page_tip_no_network" android:includeFontPadding="false" android:lineSpacingExtra="1dp"/>
+        <Button android:textSize="14dp" android:id="@+id/error_page_button" android:layout_width="140dp" android:layout_height="36dp" android:layout_marginTop="30dp" android:text="@string/retry" style="@style/Mifi.Widget.Button.Hollow"/>
+    </LinearLayout>
+</merge>

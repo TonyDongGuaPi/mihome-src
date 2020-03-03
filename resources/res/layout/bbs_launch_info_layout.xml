@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/launch_info_layout" android:background="@drawable/bbs_launch_info_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/vip_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90dp" android:src="@drawable/bbs_vip_avatar_bg"/>
+    <com.mi.global.bbs.view.CircleImageView android:layout_gravity="center_horizontal" android:id="@+id/user_icon" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginTop="136dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="215dp">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="18sp" android:textColor="#ff6700" android:gravity="center" android:id="@+id/user_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="12sp" android:textColor="#999999" android:gravity="center" android:id="@+id/user_group_name" android:background="@drawable/mi_site_bg" android:paddingTop="1dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="33dp" android:paddingStart="6dp" android:paddingEnd="6dp"/>
+    </LinearLayout>
+</FrameLayout>

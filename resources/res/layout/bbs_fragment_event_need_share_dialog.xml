@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <com.mi.global.bbs.view.Editor.FontTextView android:textColor="@color/black" android:gravity="center" android:id="@+id/text_no_chance_content" android:background="@color/white" android:layout_width="210dp" android:layout_height="80dp" android:layout_marginTop="50dp" android:text="@string/need_share_tip" android:textDirection="locale"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="230dp" android:layout_height="wrap_content">
+        <Button android:textSize="14sp" android:textColor="@color/white" android:id="@+id/btn_go_share" android:background="@drawable/dialog_button_bg" android:layout_width="100dp" android:layout_height="30dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/go_to_share" android:layout_marginEnd="30dp"/>
+        <Button android:textSize="14sp" android:textColor="@color/white" android:id="@+id/btn_no_chance_my_prize" android:background="@drawable/dialog_button_bg" android:layout_width="100dp" android:layout_height="30dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/get_my_prize_tip"/>
+    </LinearLayout>
+</LinearLayout>

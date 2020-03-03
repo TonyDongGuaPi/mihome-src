@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/home_grid_header_more" android:layout_width="match_parent" android:layout_height="40dp">
+    <View android:background="#dcdcdc" android:layout_width="match_parent" android:layout_height="1px"/>
+    <com.mi.global.shop.widget.CustomTextView android:textSize="@dimen/text_size_6" android:textColor="@color/orange" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_footer_more_text" android:drawableRight="@drawable/shop_more" android:drawablePadding="6dp"/>
+</FrameLayout>

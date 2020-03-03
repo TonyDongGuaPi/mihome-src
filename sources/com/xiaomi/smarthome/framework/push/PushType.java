@@ -1,0 +1,41 @@
+package com.xiaomi.smarthome.framework.push;
+
+import com.xiaomi.smarthome.framework.navigate.PageUrl;
+import com.xiaomi.smarthome.homeroom.homedevicelist.SharedHomeDeviceManager;
+
+public enum PushType {
+    SHARE("share"),
+    SCENE(PageUrl.j),
+    ADS("adv"),
+    SHOP("shop"),
+    DEVICE("device"),
+    DEVICE_CONNECTED("device_connect"),
+    ADD_RELATION("addRelation"),
+    ADD_RELATION_MSG("addRelation_message"),
+    ACCEPT_RELATION("acceptRelation"),
+    ACCEPT_RELATION_MSG("acceptRelation_message"),
+    DENY_RELATION("denyRelation"),
+    DENY_RELATION_MSG("denyRelation_message"),
+    REVOKE_RELATION("revokeRelation"),
+    REVOKE_RELATION_MSG("revokeRelation_Message"),
+    COMMON("common"),
+    THIRDPARTYAPI("third_api"),
+    DEVICE_BATCH("device_batch"),
+    HOME_MEMBER(SharedHomeDeviceManager.b),
+    VOICE_CTRL_MSG("voicectrl_msg"),
+    USER_BANNER_PROP("user_banner_prop"),
+    SCENE_STATUS("user_scene_switch_changed"),
+    DEVICE_NEW("device_new"),
+    AIOT_BIND("aiot-bind"),
+    INNER_JUMP("inner_jump");
+    
+    private String mValue;
+
+    private PushType(String str) {
+        this.mValue = str;
+    }
+
+    public String getValue() {
+        return this.mValue;
+    }
+}

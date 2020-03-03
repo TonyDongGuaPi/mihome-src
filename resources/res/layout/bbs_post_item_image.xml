@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/post_detail_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/all_camera_popupwidow_bg" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/camera_select_mode_selector" android:gravity="center_vertical" android:id="@+id/select_large_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_option_large_show" android:drawableStart="@drawable/camera_select_large_selector" android:paddingEnd="10dp"/>
+            <FrameLayout android:id="@+id/line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_below="@+id/select_large_mode" android:paddingStart="11dp" android:layout_alignStart="@+id/select_large_mode" android:layout_alignEnd="@+id/select_large_mode">
+                <View android:background="#15000000" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/camera_select_mode_selector" android:gravity="center_vertical" android:id="@+id/select_small_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_option_smarll_show" android:layout_below="@+id/line" android:drawableStart="@drawable/camera_select_small_selector" android:paddingEnd="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

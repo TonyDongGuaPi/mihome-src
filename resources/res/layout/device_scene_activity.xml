@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/class_T" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/device_scene_title" android:background="@color/list_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/scene_title_bar"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/device_scene_title"/>
+    <include android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="93dp" layout="@layout/edit_action_bar_scene"/>
+    <include android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" layout="@layout/title_bar_choose_device"/>
+</RelativeLayout>

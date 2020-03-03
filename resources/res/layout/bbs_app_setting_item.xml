@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" style="@style/layoutLocal">
+    <ImageView android:id="@+id/app_settings_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="#323232" android:gravity="center_vertical" android:id="@+id/app_settings_item_text" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" android:paddingStart="10dp"/>
+    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="#999999" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/app_settings_item_sub_text" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textDirection="locale" android:paddingStart="10dp"/>
+    <ImageView android:id="@+id/app_settings_item_icon_indicate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bbs_item_next_icon" android:textDirection="locale" android:layoutDirection="locale" android:layout_marginStart="10dp"/>
+</merge>

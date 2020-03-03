@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/top_radius_rectangle_bg" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginTop="8dp">
+        <TextView android:textSize="14sp" android:textColor="@color/class_V" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="46dp" android:singleLine="true"/>
+    </FrameLayout>
+    <View android:background="@color/grey_e5" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

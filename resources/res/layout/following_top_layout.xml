@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutLocal">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mi.global.bbs.view.CircleImageView android:id="@+id/following_top_icon" android:layout_width="31dp" android:layout_height="31dp" android:layout_marginTop="9dp" android:layout_marginBottom="9dp" android:scaleType="centerCrop" android:layout_marginStart="@dimen/normal_margin"/>
+        <RelativeLayout android:id="@+id/post_layout" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toEndOf="@+id/following_top_icon">
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="#222222" android:ellipsize="end" android:id="@+id/following_top_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_following_new_today" android:singleLine="true" android:layout_centerVertical="true" android:textDirection="locale" android:layout_marginStart="10dp" app:textBounds="1"/>
+            <ImageView android:id="@+id/following_top_post" android:background="@drawable/following_top_post" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/normal_margin" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

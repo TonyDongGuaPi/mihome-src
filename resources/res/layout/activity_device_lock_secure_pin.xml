@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="318dp" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true">
+        <TextView android:textSize="24sp" android:textColor="#333333" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/xiaomi_sm_pin_inputs_desc" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="14sp" android:textColor="#f43f31" android:id="@+id/xiaomi_sm_pin_sub_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tip_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80dp">
+            <TextView android:textSize="14sp" android:textColor="#cccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ble_secure_six_secure_code"/>
+            <ImageView android:id="@+id/ble_secure_pin_faq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/ble_secure_pin_tips"/>
+        </LinearLayout>
+        <com.xiaomi.smarthome.framework.page.verify.view.PinInputView android:id="@+id/xiaomi_sm_pin_inputs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19dp" app:number="6" app:spacing="6dp"/>
+    </LinearLayout>
+    <com.xiaomi.smarthome.framework.page.verify.view.PinSoftKeyboard android:id="@+id/xiaomi_sm_pin_softkeyboard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/ble_secure_pin_connect_layout" android:background="@android:color/white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <RelativeLayout android:layout_width="318dp" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+            <TextView android:textSize="24sp" android:textColor="#333333" android:id="@+id/connect_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:text="@string/ble_secure_pin_verifying"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/connect_title">
+                <TextView android:textSize="14sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ble_secure_pin_verifying_tips"/>
+                <ImageView android:id="@+id/connect_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/common_bind_loading_icon"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/ble_secure_pin_failed_layout" android:background="@android:color/white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <RelativeLayout android:layout_width="318dp" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+            <TextView android:textSize="24sp" android:textColor="#333333" android:id="@+id/pin_failed_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:text="@string/ble_secure_pin_verify_failed_title"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/pin_failed_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/ble_secure_pin_verify_failed_message_1" android:layout_below="@+id/pin_failed_title"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/pin_failed_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ble_secure_pin_verify_failed_message_2" android:layout_below="@+id/pin_failed_text_1"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/pin_failed_text_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ble_secure_pin_verify_failed_message_3" android:layout_below="@+id/pin_failed_text_2"/>
+            <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/failed_retry_btn" android:background="@drawable/selector_ble_bind_pair_button" android:layout_width="312dp" android:layout_height="42dp" android:layout_marginBottom="24dp" android:text="@string/ble_new_reopen_and_retry_btn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

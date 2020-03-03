@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1" android:layout_marginStart="15dp">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/id_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:drawablePadding="5dp"/>
+        <com.daimajia.numberprogressbar.NumberProgressBar android:id="@+id/id_num_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" app:progress_current="80" app:progress_max="100" app:progress_reached_bar_height="2dp" app:progress_reached_color="#ff6700" app:progress_text_visibility="1" app:progress_unreached_bar_height="2dp" app:progress_unreached_color="#e5e5e5"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+        <RadioButton android:layout_gravity="bottom" android:id="@+id/id_select" android:background="@drawable/radio" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:checked="false" android:button="@null"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="#666666" android:layout_gravity="bottom" android:id="@+id/id_vote_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text=""/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/auth_finish_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="15sp" android:textColor="@color/class_V" android:gravity="center" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/auth_finish_dialog_title"/>
+    <View android:background="@color/share_divider_line_color" android:layout_width="match_parent" android:layout_height="0.33dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+        <TextView android:textSize="15sp" android:textColor="@color/class_V" android:ellipsize="end" android:gravity="center" android:id="@+id/back_to_caller" android:background="@drawable/auth_finish_dialog_tv_selector_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/action_back" android:maxLines="1" android:layout_weight="1" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+        <View android:background="@color/share_divider_line_color" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="15sp" android:textColor="@color/auth_agree_btn_bg" android:gravity="center" android:id="@+id/go_smarthome" android:background="@drawable/auth_finish_dialog_tv_selector_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/auth_finish_dialog_stay_in_mijia" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

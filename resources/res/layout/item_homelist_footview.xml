@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.library.common.widget.ListItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/footer_manager" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/space" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="20dp">
+            <View android:background="@color/list_item_bg_press" android:layout_width="match_parent" android:layout_height="1px"/>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/view_group" android:background="@drawable/input_rect" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+            <View android:background="@color/list_item_bg_press" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/class_V" android:gravity="center_vertical" android:id="@+id/tv_home_switch" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/auto_change_home" android:maxLines="1" android:layout_toLeftOf="@+id/home_switch" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/home_switch" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <View android:id="@+id/divider_item" android:background="@color/list_item_bg_press" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.xiaomi.smarthome.library.common.widget.ListItemView android:id="@+id/footer_change_home" android:background="@drawable/selector_home_window_item_footer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="38dp">
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/name" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/home_manage_tite" android:maxLines="1" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true" android:layout_marginStart="5dp" android:layout_toEndOf="@+id/icon"/>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="13dp" android:layout_toRightOf="@+id/delete_btn" android:layout_centerVertical="true" android:layout_marginStart="13dp" android:layout_toEndOf="@+id/delete_btn" app:placeholderImage="@drawable/window_icon_manage_nor" app:roundAsCircle="false"/>
+    </com.xiaomi.smarthome.library.common.widget.ListItemView>
+</com.xiaomi.smarthome.library.common.widget.ListItemView>

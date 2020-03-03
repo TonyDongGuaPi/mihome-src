@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/banner_container" android:background="@color/white" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutLocal">
+    <View android:id="@+id/banner_toolbar_agent" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize"/>
+    <com.bigkoo.convenientbanner.view.CBLoopViewPager android:layout_gravity="center_horizontal" android:id="@+id/banner" android:layout_width="match_parent" android:layout_height="157dp" android:layout_marginTop="8dp" android:layout_marginBottom="16dp"/>
+    <com.mi.global.bbs.view.MyGridView android:id="@+id/grid_recommend" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="16dp" android:horizontalSpacing="8dp" android:verticalSpacing="8dp" android:numColumns="2" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+</LinearLayout>

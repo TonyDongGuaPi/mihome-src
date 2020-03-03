@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaomi.smarthome.lite.scene.LiteSceneContainerView android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/title_bar_holder" android:layout_width="match_parent" android:layout_height="45dp"/>
+        <fragment android:name="com.xiaomi.smarthome.lite.scene.LiteSceneFragment" android:id="@+id/list_scene_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.xiaomi.smarthome.lite.scene.LiteSceneContainerView>
+    <ViewStub android:id="@+id/execption_tips_stub" android:layout="@layout/execption_tip_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp"/>
+</LinearLayout>

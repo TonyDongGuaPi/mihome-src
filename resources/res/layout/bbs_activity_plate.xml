@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/activity_plate" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <include layout="@layout/bbs_common_refresh_layout"/>
+    <com.mi.global.bbs.view.SlidingTabStripView android:textSize="14sp" android:id="@+id/forum_item_top_strip" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

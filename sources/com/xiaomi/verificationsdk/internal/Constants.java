@@ -1,0 +1,64 @@
+package com.xiaomi.verificationsdk.internal;
+
+public class Constants {
+    public static final String A = "simulator";
+    public static final String B = "voiceover";
+    public static final String C = "rotation_speed";
+    public static final String D = "acceleration";
+    public static final String E = "magnetic";
+    public static final String F = "light";
+    public static final String G = "barometer";
+    public static final String H = "screen_operation";
+    public static final String I = "clientId";
+    public static final String J = "eventId";
+    public static final String K = "flag";
+    public static final int L = 50;
+    public static final int M = 5000;
+    public static final String N = "https://verify.sec.xiaomi.com/captcha/config";
+    public static final int O = 2;
+    public static final String P = "lastDownloadTime";
+    public static final String Q = "frequency";
+    public static final String R = "maxduration";
+    public static final long S = 86400000;
+    public static final String T = "https://verify.sec.xiaomi.com/captcha/data?";
+    public static final String U = "flag";
+    public static final String V = "code";
+    public static final String W = "/captcha/status";
+    public static final int X = 0;
+    public static final int Y = 1;
+    public static final int Z = 2;
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final String f23119a = "type";
+    public static final int aa = 3;
+    public static final int ab = 0;
+    public static final int ac = 500;
+    public static final int ad = 3000;
+    public static final int ae = 2000;
+    public static final boolean af = true;
+    public static final String b = "passtime";
+    public static final String c = "timestamp";
+    public static final String d = "env";
+    public static final String e = "action";
+    public static final String f = "activeVerify";
+    public static final String g = "userId";
+    public static final String h = "phone_i";
+    public static final String i = "phone_sim";
+    public static final String j = "operator_type";
+    public static final String k = "iccid";
+    public static final String l = "gps";
+    public static final String m = "battery";
+    public static final String n = "wifi_ssid";
+    public static final String o = "cell_id";
+    public static final String p = "device_id";
+    public static final String q = "app";
+    public static final String r = "collect_sdk_version";
+    public static final String s = "vpn";
+    public static final String t = "brand_model";
+    public static final String u = "system_version";
+    public static final String v = "customed_system";
+    public static final String w = "screen_brightness";
+    public static final String x = "debug";
+    public static final String y = "charging";
+    public static final String z = "never_lock_screen";
+}

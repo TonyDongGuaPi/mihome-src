@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="81dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="56dp" android:layout_height="56dp" app:actualImageScaleType="0"/>
+        <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/icon_light" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.7dp" android:src="@drawable/geek_light_open"/>
+    </FrameLayout>
+    <View android:background="@drawable/lite_grid_inner_divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="6dp" android:layout_marginRight="6dp"/>
+    <TextView android:textSize="11sp" android:textColor="@color/lite_device_name_close" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/name" android:background="@drawable/common_list_selector" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:singleLine="true"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/class_A" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaomi.smarthome.frame.login.ui.view.LoginBaseTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:centerText="@string/login_account_login_title"/>
+    <ScrollView android:paddingTop="80dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="24dp">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="115dp" android:layout_height="115dp">
+                <ImageView android:id="@+id/account_profile" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/default_icon_user240_nor" android:scaleType="fitXY"/>
+                <ImageView android:id="@+id/head_line" android:background="@drawable/common_head_line" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/class_V" android:layout_gravity="center_horizontal" android:id="@+id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp"/>
+            <FrameLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/layout_login" android:layout_width="match_parent" android:layout_height="83dp" android:layout_marginTop="91dp">
+                <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/login_button" android:text="@string/login_account_login" style="@style/ConfirmNormalBtn"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/class_D" android:layout_gravity="center" android:id="@+id/change_account" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/login_change_account"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

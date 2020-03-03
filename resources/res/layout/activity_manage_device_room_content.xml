@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="160dp" android:layout_height="160dp" android:layout_marginTop="@dimen/titlebar_height">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/device_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_launcher" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <include android:id="@+id/space_1" android:background="@color/std_main_bg" android:layout_width="match_parent" android:layout_height="@dimen/common_list_space_empty_height" layout="@layout/common_list_space_empty"/>
+    <RelativeLayout android:id="@+id/device_name_container" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+        <com.xiaomi.smarthome.library.common.widget.CustomTextListItemView android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line" app:text_one="@+id/title" app:text_two="@+id/subtitle">
+            <TextView android:textColor="@color/std_list_title" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_label_name" android:singleLine="true"/>
+            <TextView android:textColor="@color/std_list_subtitle" android:ellipsize="end" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/arrow" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/custom_text_item_margin_right" android:src="@drawable/device_shop_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="@dimen/custom_text_item_margin_right"/>
+        </com.xiaomi.smarthome.library.common.widget.CustomTextListItemView>
+        <View android:id="@+id/divider_line" android:background="@color/std_list_divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <View android:background="@color/std_list_divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    <include android:id="@+id/space_2" android:background="@color/std_main_bg" android:layout_width="match_parent" android:layout_height="@dimen/common_list_space_empty_height" layout="@layout/common_list_space_empty"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="31dp" android:layout_marginLeft="@dimen/std_list_content_margin_2">
+            <View android:id="@+id/divider_line1" android:background="@color/std_list_divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            <TextView android:textSize="@dimen/std_list_font_size_subtitle" android:textColor="@color/std_list_subtitle" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_device_room_title" android:singleLine="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <com.xiaomi.smarthome.homeroom.view.AddRoomFlowGroup android:id="@+id/tag_choose" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="25dp" android:layout_marginTop="26dp" android:layout_marginRight="25dp" android:layout_marginStart="25dp" android:layout_marginEnd="25dp"/>
+    </LinearLayout>
+    <View android:background="@color/std_list_divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    <include android:id="@+id/space_3" android:background="@color/std_main_bg" android:layout_width="match_parent" android:layout_height="@dimen/common_list_space_empty_height" layout="@layout/common_list_space_empty"/>
+    <View android:background="@color/std_list_divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/short_cut_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="31dp" android:layout_marginLeft="@dimen/std_list_content_margin_2">
+            <TextView android:textSize="@dimen/std_list_font_size_subtitle" android:textColor="@color/std_list_subtitle" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_add_to" android:singleLine="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <include android:id="@+id/add_to_common_use" android:visibility="gone" layout="@layout/list_item_checked_left"/>
+        <include android:id="@+id/add_to_short_cut" layout="@layout/list_item_checked_left"/>
+    </LinearLayout>
+</merge>

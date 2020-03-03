@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/std_main_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/empty_add_familey" android:background="@drawable/common_white_list_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="63dp" android:layout_alignParentTop="true">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="#333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/add_family_member" android:drawableLeft="@drawable/setting_add_family_normal" android:drawablePadding="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/right_arrow_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="8dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/faimlly_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,107 @@
+package com.mipay.common.data;
+
+import java.io.File;
+
+public class d {
+    public static final boolean ACCOUNT_PREVIEW = new File("/data/system/xiaomi_account_preview").exists();
+    public static final boolean DEBUG = new File("/data/system/payment_debug").exists();
+    public static final String KEY_ANALYTICS_APK_SIGN = "apkSign";
+    public static final String KEY_ANALYTICS_COUNTRY = "co";
+    public static final String KEY_ANALYTICS_LANGUAGE = "la";
+    public static final String KEY_ANALYTICS_NETWORK_METER = "networkMeter";
+    public static final String KEY_ANALYTICS_NETWORK_TYPE = "networkType";
+    public static final String KEY_ANALYTICS_PACKAGE = "package";
+    public static final String KEY_ANALYTICS_UUID = "uuid";
+    public static final String KEY_ANALYTICS_VERSION = "version";
+    public static final String KEY_ANALYTICS_VERSION_CODE = "versionCode";
+    public static final String KEY_ERR_CODE = "errcode";
+    public static final String KEY_ERR_DESC = "errDesc";
+    public static final String KEY_FRAGMENT = "fragment";
+    public static final String KEY_FRAGMENT_ARGUMENTS = "fragmentArguments";
+    public static final String KEY_FRAGMENT_FLAG = "fragmentFlag";
+    public static final String KEY_FRAGMENT_REQUEST_CODE = "fragmentRequestCode";
+    public static final String KEY_FRAGMENT_RESULT = "fragmentResult";
+    public static final String KEY_FRAGMENT_RESULT_WHO = "fragmentResultWho";
+    public static final String KEY_FRAGMENT_TITLE = "fragmentTitle";
+    public static final String KEY_JUMP_BACK_CONTINUE = "jumpBackContinue";
+    public static final String KEY_JUMP_BACK_RESULT = "jumpBackResult";
+    public static final boolean STAGING = new File("/data/system/server_staging").exists();
+
+    public interface a {
+        public static final int A = 1030005;
+        public static final int B = 1040001;
+        public static final int C = 1040002;
+        public static final int D = 1999999;
+        public static final int E = 2000000;
+        public static final int F = 2000001;
+        public static final int G = 2000002;
+        public static final int H = 2000003;
+        public static final int I = 2000004;
+        public static final int J = 2000005;
+        public static final int K = 2000006;
+        public static final int L = 2010001;
+        public static final int M = 2010002;
+        public static final int N = 2010003;
+        public static final int O = 2010004;
+        public static final int P = 2010005;
+        public static final int Q = 2010006;
+        public static final int R = 2010007;
+        public static final int S = 2010008;
+        public static final int T = 2010009;
+        public static final int U = 2020001;
+        public static final int V = 2020002;
+        public static final int W = 2020003;
+        public static final int X = 2020004;
+        public static final int Y = 2020005;
+        public static final int Z = 2020006;
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final int f8127a = 200;
+        public static final int aa = 2020007;
+        public static final int ab = 2030001;
+        public static final int ac = 2030002;
+        public static final int ad = 2030003;
+        public static final int ae = 2040001;
+        public static final int af = 2040002;
+        public static final int ag = 2040003;
+        public static final int ah = 2040004;
+        public static final int ai = 2999999;
+        public static final int aj = 3000000;
+        public static final int ak = 3000001;
+        public static final int al = 3000002;
+        public static final int am = 3000003;
+        public static final int an = 3000004;
+        public static final int ao = 3999999;
+        public static final int ap = 100000000;
+        public static final int aq = 199999999;
+        public static final int ar = 200000000;
+        public static final int as = 299999999;
+        public static final int at = 300000000;
+        public static final int au = 399999999;
+        public static final int b = 201;
+        public static final int c = 1000000;
+        public static final int d = 1000001;
+        public static final int e = 1000002;
+        public static final int f = 1000003;
+        public static final int g = 1000004;
+        public static final int h = 1000005;
+        public static final int i = 1000006;
+        public static final int j = 1000007;
+        public static final int k = 1010001;
+        public static final int l = 1010002;
+        public static final int m = 1010003;
+        public static final int n = 1010004;
+        public static final int o = 1010005;
+        public static final int p = 1010006;
+        public static final int q = 1010007;
+        public static final int r = 1020001;
+        public static final int s = 1020002;
+        public static final int t = 1020003;
+        public static final int u = 1020004;
+        public static final int v = 1020005;
+        public static final int w = 1030001;
+        public static final int x = 1030002;
+        public static final int y = 1030003;
+        public static final int z = 1030004;
+    }
+}

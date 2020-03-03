@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23dp">
+        <EditText android:textSize="@dimen/font_size_13sp" android:textColorHint="@color/black_30_transparent" android:gravity="center_vertical" android:id="@+id/tv_account_id" android:background="@drawable/std_family_button_remarks_normal" android:paddingLeft="24dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:hint="@string/login_account_hint" android:singleLine="true" android:inputType="text" android:imeOptions="actionDone" android:paddingStart="24dp" android:paddingEnd="2dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:src="@drawable/std_family_icon_search" android:layout_centerVertical="true" android:layout_marginStart="23dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_account_container" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="8dp">
+        <ImageView android:id="@+id/iv_account_icon" android:background="@drawable/std_family_icon_dianhuaben" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true" android:layout_marginStart="15dp"/>
+        <TextView android:textSize="@dimen/font_size_14sp" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:text="@string/family_invite_from_contacts" android:layout_toRightOf="@+id/iv_account_icon" android:layout_centerVertical="true" android:layout_marginStart="13dp" android:layout_toEndOf="@+id/iv_account_icon"/>
+        <View style="@style/item_underline"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_miliao_container" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/iv_miliao_icon" android:background="@drawable/std_family_icon_miliao" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true" android:layout_marginStart="15dp"/>
+        <TextView android:textSize="@dimen/font_size_14sp" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:text="@string/family_invite_from_mi_talk" android:layout_toRightOf="@+id/iv_miliao_icon" android:layout_centerVertical="true" android:layout_marginStart="13dp" android:layout_toEndOf="@+id/iv_miliao_icon"/>
+        <View style="@style/item_underline"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_wechat_container" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/iv_wechat_icon" android:background="@drawable/std_family_icon_weixin" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true" android:layout_marginStart="15dp"/>
+        <TextView android:textSize="@dimen/font_size_14sp" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:text="@string/family_invite_from_we_chat" android:layout_toRightOf="@+id/iv_wechat_icon" android:layout_centerVertical="true" android:layout_marginStart="13dp" android:layout_toEndOf="@+id/iv_wechat_icon"/>
+        <View style="@style/item_underline"/>
+    </RelativeLayout>
+</LinearLayout>

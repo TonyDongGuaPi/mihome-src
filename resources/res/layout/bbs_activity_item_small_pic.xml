@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_item_layout" android:background="@drawable/home_banner_white_pressed_selector" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutLocal">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="120dp">
+        <ImageView android:id="@+id/activity_item_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <View android:id="@+id/activity_bg_cover" android:background="#99000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/activity_img_cover" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <com.mi.global.bbs.view.CircleImageView android:id="@+id/activity_item_icon" android:layout_width="18dp" android:layout_height="18dp" android:scaleType="centerCrop"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/activity_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fabian.H" android:singleLine="true" android:textDirection="locale" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/activity_item_icon"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="@color/activity_black_color" android:ellipsize="end" android:id="@+id/activity_item_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="gadfafdfadsaf" android:lines="2" android:layout_below="@+id/activity_item_icon" android:textDirection="locale" app:textBounds="1"/>
+    </RelativeLayout>
+    <com.mi.global.bbs.view.Editor.FontTextView android:textSize="13sp" android:textColor="#c4c4c4" android:ellipsize="end" android:id="@+id/activity_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="20dp" android:text="Fabian.H" android:singleLine="true" android:textDirection="locale"/>
+</LinearLayout>

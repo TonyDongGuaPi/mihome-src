@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/white_pressed_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" style="@style/layoutLocal">
+    <RelativeLayout android:id="@+id/my_reply_item_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/my_reply_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/my_reply_quota_item" android:background="@drawable/user_activity_item_gray_sharp" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/my_reply_item_title">
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/my_reply_quota_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale"/>
+        </LinearLayout>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/my_reply_date" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true" android:layout_below="@+id/my_reply_quota_item" android:textDirection="locale"/>
+        <RelativeLayout android:id="@+id/rl_reply_delete" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignBottom="@+id/my_reply_date" android:layout_alignParentTop="true" android:alpha="0.8">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23dp" android:layout_marginBottom="14dp" android:src="@drawable/bbs_thread_delete" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/user_center_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

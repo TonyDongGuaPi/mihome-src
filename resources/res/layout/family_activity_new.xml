@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/std_main_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <include android:id="@+id/list_space" android:layout_width="match_parent" android:layout_height="@dimen/std_list_space_margin_top" android:layout_below="@+id/title_bar" layout="@layout/common_list_space_empty"/>
+    <com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshLinearLayout android:orientation="vertical" android:id="@+id/family_refresh_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/top_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="143.3dp">
+                    <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="143.3dp" android:layout_weight="1">
+                        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="67.7dp" android:layout_height="67.7dp" android:layout_marginTop="20dp">
+                            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/icon_1" android:layout_width="67.7dp" android:layout_height="67.7dp" android:scaleType="fitCenter"/>
+                            <ImageView android:layout_gravity="center" android:layout_width="67.7dp" android:layout_height="67.7dp" android:src="@drawable/head_mask" android:scaleType="fitCenter"/>
+                        </FrameLayout>
+                        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/class_text_10" android:layout_gravity="center_horizontal" android:id="@+id/nick_name_1" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="2"/>
+                        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/class_text_3" android:layout_gravity="center_horizontal" android:id="@+id/relation_ship_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.3dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:background="#d7d7d7" android:layout_width="1px" android:layout_height="126.7dp"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/top_container_2" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="143.3dp" android:layout_weight="1">
+                        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="67.7dp" android:layout_height="67.7dp" android:layout_marginTop="20dp">
+                            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/icon_2" android:layout_width="67.7dp" android:layout_height="67.7dp" android:scaleType="fitCenter"/>
+                            <ImageView android:layout_gravity="center" android:layout_width="67.7dp" android:layout_height="67.7dp" android:src="@drawable/head_mask" android:scaleType="fitCenter"/>
+                        </FrameLayout>
+                        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/class_text_10" android:layout_gravity="center_horizontal" android:id="@+id/nick_name_2" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="2"/>
+                        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/class_text_3" android:layout_gravity="center_horizontal" android:id="@+id/relation_ship_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.3dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:background="#d7d7d7" android:layout_width="match_parent" android:layout_height="1px"/>
+                <com.xiaomi.smarthome.library.common.widget.ExpandListView android:scrollbarStyle="outsideOverlay" android:id="@+id/faimlly_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_marginRight="23dp" android:listSelector="@android:color/transparent" android:divider="@null" android:layout_marginStart="23dp" android:layout_marginEnd="23dp"/>
+                <com.xiaomi.smarthome.library.common.widget.ExpandGridView android:gravity="center" android:id="@+id/family_grid_view" android:padding="22dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:numColumns="2"/>
+                <RelativeLayout android:id="@+id/add_family_container" android:layout_width="match_parent" android:layout_height="62.7dp">
+                    <ImageView android:id="@+id/icon_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:src="@drawable/add_family_member" android:layout_centerVertical="true" android:layout_marginStart="22dp"/>
+                    <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/class_text_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/add_family_member" android:layout_toRightOf="@+id/icon_add" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_toEndOf="@+id/icon_add"/>
+                    <LinearLayout android:background="#d7d7d7" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.xiaomi.smarthome.library.common.widget.CustomPullDownRefreshLinearLayout>
+</LinearLayout>

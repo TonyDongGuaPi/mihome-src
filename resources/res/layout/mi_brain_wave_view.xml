@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.mibrain.viewutil.waveview.MiBrainWaveView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/mi_brain_wave_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/mi_brain_wave_view_listening_rl" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaomi.smarthome.mibrain.viewutil.waveview.CircleView android:layout_width="70dp" android:layout_height="70dp" android:layout_centerInParent="true"/>
+        <com.xiaomi.smarthome.mibrain.viewutil.waveview.CircleView android:layout_width="60dp" android:layout_height="60dp" android:layout_centerInParent="true"/>
+        <com.xiaomi.smarthome.mibrain.viewutil.waveview.CircleView android:id="@+id/mi_brain_circle_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <com.xiaomi.smarthome.mibrain.viewutil.waveview.CircleView android:id="@+id/mi_brain_circle_view_ring" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mi_brain_voice_icon" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/mi_brain_wave_view_normal_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mi_brain_wave_view_bg" android:layout_centerInParent="true"/>
+</com.xiaomi.smarthome.mibrain.viewutil.waveview.MiBrainWaveView>

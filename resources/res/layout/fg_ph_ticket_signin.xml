@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fragment_main" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbarThumbVertical="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_top_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/passport_sign_in_title"/>
+                <TextView android:layout_gravity="start" android:id="@+id/phone_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已经发送验证吗到:+8612888888888" android:paddingStart="4dp" android:paddingEnd="0dp"/>
+                <android.support.design.widget.TextInputLayout android:id="@+id/ticket_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" app:hintEnabled="false">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <android.support.design.widget.TextInputEditText android:id="@+id/ticket" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/ticket_hint" android:layout_centerVertical="true" android:inputType="number"/>
+                        <TextView android:textSize="@dimen/passport_text_size" android:textColor="@color/passport_color_send_ticket" android:id="@+id/action_get_ph_ticket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/get_ph_ticket" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/PassportButtonBorderless"/>
+                    </RelativeLayout>
+                </android.support.design.widget.TextInputLayout>
+                <TextView android:layout_gravity="start" android:id="@+id/sign_in_user_id_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="@string/passport_set_password" android:paddingStart="4dp" android:paddingEnd="0dp"/>
+                <android.support.design.widget.TextInputLayout android:id="@+id/password_wapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:hintEnabled="false" app:passwordToggleEnabled="true" app:passwordToggleTint="@color/passport_colorPrimaryDark">
+                    <android.support.design.widget.TextInputEditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="35dp" android:hint="@string/psw_hint" android:inputType="textPassword" android:imeOptions="actionUnspecified"/>
+                </android.support.design.widget.TextInputLayout>
+                <Button android:theme="@style/PassportButton" android:textSize="@dimen/passport_text_size" android:id="@+id/ph_sign_in_btn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginLeft="-4dp" android:layout_marginTop="20dp" android:layout_marginRight="-4dp" android:text="@string/passport_next_step" android:layout_marginStart="-4dp" android:layout_marginEnd="-4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

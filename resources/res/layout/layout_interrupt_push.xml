@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/std_main_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return_righttext"/>
+    <View android:background="@color/std_list_divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    <View android:background="@color/std_main_bg" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <View android:background="@color/std_list_divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/execute_from_layout" android:background="@drawable/choose_device_list_item_last_position_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/std_list_right_content_space" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/std_list_right_content_space">
+            <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/std_list_title" android:gravity="start" android:id="@+id/execute_from_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smarthome_scene_timer_from"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/std_list_subtitle" android:gravity="end" android:layout_gravity="center_vertical" android:id="@+id/execute_from_hint" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/std_list_content_margin_right" android:layout_weight="1" android:layout_marginEnd="@dimen/std_list_content_margin_right"/>
+        </LinearLayout>
+        <include android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true" layout="@layout/divider_line"/>
+    </RelativeLayout>
+    <com.xiaomi.smarthome.library.common.widget.TimePicker android:id="@+id/execute_from_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/execute_to_layout" android:background="@drawable/choose_device_list_item_last_position_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/std_list_item_height_single_line">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/std_list_right_content_space" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/std_list_right_content_space">
+            <TextView android:textSize="@dimen/std_list_font_size_title" android:textColor="@color/std_list_title" android:gravity="start" android:id="@+id/execute_to_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smarthome_scene_timer_to"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/std_list_subtitle" android:gravity="end" android:layout_gravity="center_vertical" android:id="@+id/execute_to_hint" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/std_list_content_margin_right" android:layout_weight="1" android:layout_marginEnd="@dimen/std_list_content_margin_right"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.xiaomi.smarthome.library.common.widget.TimePicker android:id="@+id/execute_to_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/std_list_divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/guide_*,@drawable/ic_*,@drawable/icon_*,@drawable/*card_*,@drawable/tab_*,@drawable/coin_*,@drawable/checkin_*,@drawable/search_insurance,@raw/*,@layout/capture_photo_manual_mask,@drawable/passport_auth_logo"/>

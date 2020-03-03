@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <transitionSet android:duration="400">
+        <targets>
+            <target android:targetId="@+id/scrim"/>
+        </targets>
+        <fade/>
+        <transition android:interpolator="@android:interpolator/linear_out_slow_in" app:centerOn="@+id/searchback" class="com.mi.global.bbs.utils.CircularReveal"/>
+    </transitionSet>
+    <fade android:interpolator="@android:interpolator/linear_out_slow_in" android:duration="400" android:startDelay="400">
+        <targets>
+            <target android:targetId="@+id/search_view"/>
+        </targets>
+    </fade>
+    <fade android:interpolator="@android:interpolator/fast_out_slow_in" android:duration="400">
+        <targets>
+            <target android:targetId="@android:id/navigationBarBackground"/>
+        </targets>
+    </fade>
+</transitionSet>

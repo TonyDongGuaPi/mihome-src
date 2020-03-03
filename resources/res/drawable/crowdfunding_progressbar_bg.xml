@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@android:id/background" android:drawable="@drawable/crowdfunding_progressbar_background"/>
+    <item android:id="@android:id/progress">
+        <scale android:drawable="@drawable/crowdfunding_progressbar_progress" android:scaleWidth="100%"/>
+    </item>
+</layer-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.smarthome.voice.microaudio.viewutil.MicroCallingView xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/micro_calling_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/tv_xiaobing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="134dp" android:text="@string/micro_calling_tv" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="24sp" android:textColor="@color/white" android:id="@+id/micro_calling_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="134dp" android:layout_toRightOf="@+id/tv_xiaobing"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_below="@+id/micro_calling_tv" android:layout_centerHorizontal="true">
+        <com.xiaomi.smarthome.mibrain.viewutil.RadarLayout android:id="@+id/micro_calling_radar_layout" android:layout_width="65dp" android:layout_height="65dp" android:layout_centerInParent="true"/>
+        <com.xiaomi.smarthome.mibrain.viewutil.RadarLayout android:id="@+id/micro_call_radar_layout_ring" android:layout_width="301dp" android:layout_height="301dp" android:layout_centerInParent="true"/>
+        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/micro_audio_logo" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</com.xiaomi.smarthome.voice.microaudio.viewutil.MicroCallingView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/std_lifechoice_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/module_a_3_title_bar_return_transparent_white"/>
+    <com.xiaomi.smarthome.library.common.widget.CircleIndicator android:id="@+id/indicator" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="30dp" android:layout_marginBottom="30dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50dp" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xiaomi.smarthome.library.common.widget.MultiViewPager android:id="@+id/pager" android:paddingBottom="105dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:matchChildWidth="@+id/content_view"/>
+        </LinearLayout>
+    </FrameLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar" layout="@layout/common_white_empty_view_pullrefresh"/>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bbs_sign_calendar_top" android:scaleType="centerCrop"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mi.global.bbs.view.CircleImageView android:id="@+id/user_icon" android:layout_width="53dp" android:layout_height="53dp" android:layout_marginTop="16dp" android:src="@drawable/bbs_user_head_icon"/>
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="@string/no_of_consecutive_check_in_days"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="14dp" android:layoutDirection="ltr">
+                <com.mi.global.bbs.view.Editor.FontTextView android:textSize="20sp" android:textColor="#333333" android:gravity="center" android:id="@+id/sign_day_1" android:background="@drawable/bbs_sign_day_bg" android:paddingBottom="4dp" android:layout_width="33dp" android:layout_height="41dp" android:text="0" app:textBounds="1"/>
+                <com.mi.global.bbs.view.Editor.FontTextView android:textSize="20sp" android:textColor="#333333" android:gravity="center" android:id="@+id/sign_day_2" android:background="@drawable/bbs_sign_day_bg" android:paddingBottom="4dp" android:layout_width="33dp" android:layout_height="41dp" android:text="0" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" app:textBounds="1"/>
+                <com.mi.global.bbs.view.Editor.FontTextView android:textSize="20sp" android:textColor="#333333" android:gravity="center" android:id="@+id/sign_day_3" android:background="@drawable/bbs_sign_day_bg" android:paddingBottom="4dp" android:layout_width="33dp" android:layout_height="41dp" android:text="0" app:textBounds="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <com.mi.global.bbs.view.PagerSlidingTabStrip android:id="@+id/tab" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

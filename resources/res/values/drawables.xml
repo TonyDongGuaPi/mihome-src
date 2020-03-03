@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="app_icon" />
+    <drawable name="bg_photo_cam_normal">#787878</drawable>
+    <drawable name="bg_photo_cam_pressed">#858585</drawable>
+    <drawable name="black">#ff000000</drawable>
+    <drawable name="common_brand_assist_color">#d1bfa6</drawable>
+    <drawable name="common_brand_color">#a6937c</drawable>
+    <drawable name="common_brand_disable_color">#d8cfc7</drawable>
+    <drawable name="common_brand_press_color">#beafa1</drawable>
+    <drawable name="common_list_item_pressed">#ff3fb57d</drawable>
+    <drawable name="common_tab_background">#e3e3e3</drawable>
+    <drawable name="exo_controls_fastforward">@drawable/exo_icon_fastforward</drawable>
+    <drawable name="exo_controls_next">@drawable/exo_icon_next</drawable>
+    <drawable name="exo_controls_pause">@drawable/exo_icon_pause</drawable>
+    <drawable name="exo_controls_play">@drawable/exo_icon_play</drawable>
+    <drawable name="exo_controls_previous">@drawable/exo_icon_previous</drawable>
+    <drawable name="exo_controls_rewind">@drawable/exo_icon_rewind</drawable>
+    <drawable name="exo_notification_fastforward">@drawable/exo_icon_fastforward</drawable>
+    <drawable name="exo_notification_next">@drawable/exo_icon_next</drawable>
+    <drawable name="exo_notification_pause">@drawable/exo_icon_pause</drawable>
+    <drawable name="exo_notification_play">@drawable/exo_icon_play</drawable>
+    <drawable name="exo_notification_previous">@drawable/exo_icon_previous</drawable>
+    <drawable name="exo_notification_rewind">@drawable/exo_icon_rewind</drawable>
+    <drawable name="exo_notification_stop">@drawable/exo_icon_stop</drawable>
+    <drawable name="list_background">#fff4f4f4</drawable>
+    <drawable name="list_divider_locked">#20ffffff</drawable>
+    <drawable name="lite_grid_inner_divider">#cbd4db</drawable>
+    <drawable name="ltgray">#fff4f4f4</drawable>
+    <drawable name="ltyellow">#fffff4db</drawable>
+    <drawable name="mini_list_devider">#bababa</drawable>
+    <drawable name="mini_page_bg_color">#ededed</drawable>
+    <drawable name="mini_win_background_draw">#00000000</drawable>
+    <drawable name="mitv_white_line">#ffd6dbdf</drawable>
+    <drawable name="namcard_picker_bkg_hover">#ff333333</drawable>
+    <drawable name="namcard_picker_bkg_normal">#ff272727</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="sh_main">#e2e2e3</drawable>
+    <drawable name="smart_life_btn_green">#36d57d</drawable>
+    <drawable name="smart_life_btn_green_50_transparent">#8036d57d</drawable>
+    <drawable name="title_background">#ebebec</drawable>
+    <drawable name="transparent">#00ffffff</drawable>
+    <drawable name="transparent_background">#99000000</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="widget_edit_block_bg_normal">@android:color/transparent</drawable>
+</resources>

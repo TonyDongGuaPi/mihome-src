@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/black_95_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/bottom_rl" android:layout_width="match_parent" android:layout_height="@dimen/mi_brain_bottom_height" android:layout_alignParentBottom="true">
+            <include android:layout_width="match_parent" android:layout_height="@dimen/mi_brain_bottom_height" layout="@layout/mi_brain_wave_view"/>
+            <include android:id="@+id/mi_brain_ring_view" android:layout_width="@dimen/mi_brain_bottom_height" android:layout_height="@dimen/mi_brain_bottom_height" android:layout_centerInParent="true" layout="@layout/mibrain_record_waveview"/>
+            <View android:id="@+id/mi_brain_voice_control_view" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/mi_brain_help_iv" android:paddingLeft="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mibrain_help_icon_selector" android:layout_centerVertical="true" android:contentDescription="@string/mi_brain_help" android:paddingStart="28dp"/>
+            <ImageView android:id="@+id/mi_brain_close_iv" android:paddingRight="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mibrain_close_icon_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/mi_brain_close" android:paddingEnd="28dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <include android:id="@+id/mi_brain_tips_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_rl" layout="@layout/mi_brain_tips_content"/>
+        <include android:id="@+id/mi_brain_executing_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginTop="100dp" android:layout_centerHorizontal="true" layout="@layout/mi_brain_executing_view"/>
+        <com.xiaomi.smarthome.mibrain.viewutil.waveview.MiBrainRecycleViewLayout android:id="@+id/mi_brain_recycle_view_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_rl"/>
+        <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_rl" layout="@layout/mi_brain_content_layout"/>
+        <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_rl" layout="@layout/mi_brain_help_layout"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/more_voice_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31dp" android:layout_marginRight="17dp" android:src="@drawable/mibrain_more_bg_selector" android:layout_alignParentRight="true" android:contentDescription="@string/scene2_more" android:layout_marginEnd="17dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="action_hint_options">
+        <item>Создать тему</item>
+        <item>Задать вопрос</item>
+    </array>
+    <array name="activity_tab">
+        <item>Онлайн</item>
+        <item>Оффлайн</item>
+    </array>
+    <array name="ble_guide_content_description">
+        <item>Первая страница</item>
+        <item>Вторая страница</item>
+        <item>Третья страница</item>
+    </array>
+    <array name="checkInTabs">
+        <item>Календарь отметок</item>
+        <item>Таблица лидеров</item>
+    </array>
+    <array name="column_tab">
+        <item>Популярные темы</item>
+        <item>Мои подписки</item>
+    </array>
+    <array name="comment_manage">
+        <item>Изменить</item>
+        <item>Бан</item>
+        <item>Удалить</item>
+    </array>
+    <array name="comment_manage2">
+        <item>Изменить</item>
+        <item>Удалить</item>
+    </array>
+    <array name="comments_sort">
+        <item>Сначала новые</item>
+        <item>Сначала старые</item>
+    </array>
+    <array name="common_edit_item_name">
+        <item>@string/menu_edit_rename</item>
+        <item>@string/menu_edit_share</item>
+        <item>@string/menu_edit_delete</item>
+    </array>
+    <array name="cs_month_array">
+        <item>Янв</item>
+        <item>Фев</item>
+        <item>Мар</item>
+        <item>Апр</item>
+        <item>Май</item>
+        <item>Июн</item>
+        <item>Июл</item>
+        <item>Авг</item>
+        <item>Сен</item>
+        <item>Окт</item>
+        <item>Ноя</item>
+        <item>Декабрь</item>
+    </array>
+    <array name="default_room_config">
+        <item>Гостиная</item>
+        <item>Спальня</item>
+        <item>Столовая</item>
+        <item>Ванная</item>
+        <item>Ванная</item>
+        <item>Кухня</item>
+        <item>Детская</item>
+        <item>Детская комната</item>
+        <item>Игровая комната</item>
+        <item>Медиа-комната</item>
+        <item>Офис</item>
+        <item>Гостиная</item>
+        <item>Обучение</item>
+        <item>Студия</item>
+        <item>Гардероб</item>
+        <item>Двор</item>
+        <item>Сад</item>
+        <item>Подвал</item>
+        <item>Чердак</item>
+        <item>Балкон</item>
+        <item>Пользовательский</item>
+    </array>
+    <array name="education">
+        <item>Доктор наук</item>
+        <item>Магистр</item>
+        <item>Бакалавр</item>
+        <item>Профессионально-техническое училище</item>
+        <item>Старшая школа</item>
+        <item>Средняя школа</item>
+        <item>Начальная школа</item>
+        <item>Прочее</item>
+    </array>
+    <array name="family_memeber_names">
+        <item>Супруг(-а)</item>
+        <item>Отец</item>
+        <item>Мама</item>
+        <item>Сын</item>
+        <item>Дочь</item>
+        <item>Сосед(-и)</item>
+        <item>Прочее</item>
+    </array>
+    <array name="forum_tab">
+        <item>Популярное</item>
+        <item>Последние</item>
+    </array>
+    <array name="gender">
+        <item>Секрет</item>
+        <item>Мужчина</item>
+        <item>Женщина</item>
+    </array>
+    <array name="home_env_info_item_title">
+        <item>Температура </item>
+        <item>Влажность </item>
+        <item>Качество воздуха </item>
+    </array>
+    <array name="home_env_type_desc">
+        <item>Температура</item>
+        <item>Влажность</item>
+        <item>Качество воздуха</item>
+    </array>
+    <array name="home_trending_tab">
+        <item>ПОПУЛЯРНОЕ</item>
+        <item>ДЛЯ ВАС</item>
+    </array>
+    <array name="lite_forum_sort">
+        <item>Топ</item>
+        <item>Последние публикации</item>
+        <item>Последние ответы</item>
+        <item>Самое больше количество ответов</item>
+        <item>Самое большое количество просмотров</item>
+    </array>
+    <array name="main_tab">
+        <item>ГЛАВНАЯ</item>
+        <item>РАЗДЕЛЫ</item>
+        <item>ПОДПИСКИ</item>
+        <item>Я</item>
+    </array>
+    <array name="mikey_bgcolor">
+        <item>@drawable/top_down_gradient_yellow</item>
+        <item>@drawable/top_down_gradient_blue</item>
+        <item>@drawable/top_down_gradient_purple</item>
+    </array>
+    <array name="mikey_menu">
+        <item>Тестовое задание</item>
+        <item>Управление задачами</item>
+        <item>Отмена</item>
+    </array>
+    <array name="mikey_title_bgcolor">
+        <item>#d19f60</item>
+        <item>#1e929f</item>
+        <item>#ff0067</item>
+    </array>
+    <array name="month">
+        <item>Янв</item>
+        <item>Фев</item>
+        <item>Мар</item>
+        <item>Апр</item>
+        <item>Май</item>
+        <item>Июн</item>
+        <item>Июл</item>
+        <item>Авг</item>
+        <item>Сен</item>
+        <item>Окт</item>
+        <item>Ноя</item>
+        <item>Дек</item>
+    </array>
+    <array name="months">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </array>
+    <array name="multikey_keyname_double">
+        <item>Левый переключатель</item>
+        <item>Правый переключатель</item>
+    </array>
+    <array name="multikey_keyname_three">
+        <item>Левый переключатель</item>
+        <item>Главный переключатель</item>
+        <item>Правый переключатель</item>
+    </array>
+    <array name="newbie_titles">
+        <item>Загрузить аватар</item>
+        <item>Задайте псевдоним</item>
+        <item>Подпишитесь на 5 пользователей, которые Вас интересуют</item>
+        <item>Завершить все задания для новичков</item>
+    </array>
+    <array name="online">
+        <item>Не в сети</item>
+        <item>Онлайн</item>
+    </array>
+    <array name="qa_home_tab">
+        <item>Популярное</item>
+        <item>Новые</item>
+        <item>Запросы</item>
+    </array>
+    <array name="questions">
+        <item>Каким Mi устройством вы пользуетесь/интересуетесь?</item>
+        <item>Выберите интересующие вас элементы</item>
+        <item>Выберите Mi фан-клубы, за которыми вы хотите следить</item>
+    </array>
+    <array name="search_tab">
+        <item>Темы</item>
+        <item>Пользователи</item>
+    </array>
+    <array name="settings_list_str">
+        <item>Личное сообщение</item>
+        <item>Новое в избранном</item>
+        <item>Новые подписчики</item>
+        <item>Новые ответы</item>
+    </array>
+    <array name="sort_str">
+        <item>По последнему комментарию</item>
+        <item>По количеству просмотров</item>
+        <item>По количеству комментариев</item>
+        <item>По последним публикациям</item>
+    </array>
+    <array name="task_titles">
+        <item>Создать тему</item>
+        <item>Добавить в избранное</item>
+        <item>Ответить в теме</item>
+    </array>
+    <array name="thought_home_tab">
+        <item>ПОДПИСКИ</item>
+        <item>МЫСЛИ</item>
+    </array>
+    <array name="timezone_city_name">
+        <item>Пекин</item>
+        <item>Сеул</item>
+        <item>Токио</item>
+        <item>Денвер</item>
+        <item>Коста-Рика</item>
+        <item>Чикаго</item>
+        <item>Мехико</item>
+        <item>Реджайна</item>
+        <item>Маджуро</item>
+        <item>Мидуэй</item>
+        <item>Гонолулу</item>
+        <item>Анкоридж</item>
+        <item>Лос-Анджелес</item>
+        <item>Тихуана</item>
+        <item>Финикс</item>
+        <item>Чиуауа</item>
+        <item>Богота</item>
+        <item>Нью-Йорк</item>
+        <item>Каракас</item>
+        <item>Барбадос</item>
+        <item>Манаус</item>
+        <item>Сантьяго</item>
+        <item>Сент-Джонс</item>
+        <item>Сан-Паулу</item>
+        <item>Буэнос-Айрес</item>
+        <item>Готхоб</item>
+        <item>Монтевидео</item>
+        <item>Южная Георгия</item>
+        <item>Азорские о-ва</item>
+        <item>Кабо-Верде</item>
+        <item>Касабланка</item>
+        <item>Лондон</item>
+        <item>Амстердам</item>
+        <item>Белград</item>
+        <item>Брюссель</item>
+        <item>Сараево</item>
+        <item>Виндхук</item>
+        <item>Браззавиль</item>
+        <item>Амман</item>
+        <item>Афины</item>
+        <item>Бейрут</item>
+        <item>Каир</item>
+        <item>Хельсинки</item>
+        <item>Иерусалим</item>
+        <item>Минск</item>
+        <item>Хараре</item>
+        <item>Багдад</item>
+        <item>Москва</item>
+        <item>Кувейт</item>
+        <item>Найроби</item>
+        <item>Тегеран</item>
+        <item>Баку</item>
+        <item>Тбилиси</item>
+        <item>Ереван</item>
+        <item>Дубай</item>
+        <item>Кабул</item>
+        <item>Карачи</item>
+        <item>Уральск</item>
+        <item>Екатеринбург</item>
+        <item>Калькутта</item>
+        <item>Коломбо</item>
+        <item>Катманду</item>
+        <item>Алматы</item>
+        <item>Рангун</item>
+        <item>Красноярск</item>
+        <item>Бангкок</item>
+        <item>Иркутск</item>
+        <item>Куала-Лумпур</item>
+        <item>Перт</item>
+        <item>Якутск</item>
+        <item>Аделаида</item>
+        <item>Дарвин</item>
+        <item>Брисбен</item>
+        <item>Хобарт</item>
+        <item>Сидней</item>
+        <item>Владивосток</item>
+        <item>Гуам</item>
+        <item>Магадан</item>
+        <item>Окленд</item>
+        <item>Фиджи</item>
+        <item>Тонгатапу</item>
+    </array>
+    <array name="updates">
+        <item>Добавлены опросы! Теперь Вы можете проголосовать в приложении</item>
+        <item>Панель управления добавлена под вкладкой ДЛЯ ВАС. Настройте контент, который Вас интересует</item>
+        <item>Задания для новичков добавлены для новых пользователей. Выполните их и получите медаль</item>
+        <item>Улучшен интерфейс создания тем</item>
+        <item>Улучшена загрузка изображений</item>
+    </array>
+    <array name="user_permission">
+        <item>Общедоступный</item>
+        <item>Мы следим друг за другом</item>
+        <item>Только я</item>
+    </array>
+    <array name="user_tab">
+        <item>Активность</item>
+        <item>Фото</item>
+        <item>Профиль</item>
+    </array>
+    <array name="weekday">
+        <item>ВС</item>
+        <item>ПН</item>
+        <item>ВТ</item>
+        <item>СР</item>
+        <item>ЧТ</item>
+        <item>ПТ</item>
+        <item>СБ</item>
+    </array>
+    <array name="weekday_short">
+        <item>Вс</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </array>
+    <array name="weeks">
+        <item>Вс</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </array>
+</resources>

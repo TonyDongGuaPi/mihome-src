@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/mishopsdk_white" android:padding="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18dp" android:textColor="#aa000000" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/permission_title"/>
+    <TextView android:textSize="16dp" android:textColor="#88000000" android:id="@+id/tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textColor="@color/mishopsdk_t_grey_buttonicon" android:id="@+id/action_dialog_permission_cancel" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消"/>
+        <TextView android:textColor="@color/mishopsdk_orange" android:id="@+id/action_dialog_permission_jump" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去设置"/>
+    </LinearLayout>
+</LinearLayout>

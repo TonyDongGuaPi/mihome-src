@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="13dp" android:paddingEnd="13dp">
+    <ViewFlipper android:id="@+id/login_first_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginRight="11dp">
+        <com.xiaomi.smarthome.frame.login.ui.view.LocalPhoneView android:id="@+id/login_sms_code_local_phone" android:layout_width="match_parent" android:layout_height="wrap_content" app:isShowIcon="false"/>
+        <com.xiaomi.smarthome.frame.login.ui.view.LoginInputView android:id="@+id/login_phone_input_phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/login_phone_phone_hint" android:maxLength="11" android:inputType="number" app:showIcon="false" app:showTitle="true" app:showToggle="false"/>
+    </ViewFlipper>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/login_sms_code_input_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginRight="11dp">
+        <com.xiaomi.smarthome.frame.login.ui.view.LoginInputView android:id="@+id/login_sms_code_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/login_phone_sms_code_hint" android:maxLength="8" android:inputType="number" app:showClear="false" app:showIcon="false" app:showToggle="false"/>
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="#32bac0" android:gravity="center" android:id="@+id/login_sms_code_get" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="@string/login_phone_get_sms_code" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <FrameLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="83dp" android:layout_marginLeft="11dp" android:layout_marginRight="11dp">
+        <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/login_phone_sure" android:text="@string/login_home_phone_old_ensure" style="@style/ConfirmNormalBtn"/>
+    </FrameLayout>
+</merge>

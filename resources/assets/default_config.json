@@ -1,0 +1,79 @@
+{
+  "web_resource_route": {
+    "default": [
+      "api.jr.mi.com/index/",
+      "api.jr.mi.com/insurance/",
+      "api.jr.mi.com/loan/",
+      "api.jr.mi.com/my/"
+    ],
+    "special": [
+      {
+        "src":"m.jr.mi.com/",
+        "dests":[
+          "fundres.mipay.com/app/assets/pub/pub_index.html",
+          "preview.fundres.mipay.com/app/assets/pub/pub_index.html",
+          "staging.fundres.mipay.com/app/assets/staging/staging_index.html"
+        ]
+      }
+    ]
+  },
+  "xiaomi_services": [
+    {
+      "sid":"mifiapi",
+      "base":"https://api.jr.mi.com/",
+      "weblogin":"loan/weblogin/"
+    },
+    {
+      "sid":"mjrmicom",
+      "base":"https://m.jr.mi.com/",
+      "weblogin":"weblogin"
+    },
+    {
+      "sid":"cashpay-wap",
+      "base":"https://m.pay.xiaomi.com/",
+      "weblogin":""
+    },
+    {
+      "sid":"mifihelp",
+      "base":"https://help.jr.mi.com/",
+      "weblogin":"weblogin"
+    },
+    {
+      "sid":"miinsurtech",
+      "base":"https://vehicle.miinsurtech.com/",
+      "weblogin":"v1/login"
+    },
+    {
+      "sid": "identity-api",
+      "base": "https://certify.mipay.com/",
+      "weblogin":""
+    },
+    {
+      "sid":"mipay",
+      "base":"https://api.pay.xiaomi.com/",
+      "weblogin":""
+    },
+    {
+      "sid":"lmk_mipay",
+      "base":"https://lmk.mipay.com/",
+      "weblogin":"api/login"
+    }
+  ],
+  "web_features": {
+    ".xwbank.com": ["Photo:capturePhoto", "Data:getLocation", "Navigator:closePage", "UI:setTitle"],
+    ".hopebank.com": ["Photo:capturePhoto", "Data:getLocation", "Navigator:closePage", "UI:setTitle"],
+
+    ".wolaidai.com": ["Photo:*"],
+
+    ".wandaph.com": ["Photo:*"],
+
+    ".u51.com": ["Photo:*"],
+    ".51zhangdan.cc:81": ["Photo:*"],
+    "jcepay.bobzj.com.cn:8090": ["Photo:*"],
+
+    ".zhongan.com": ["Photo:*"],
+
+    ".wacaiyun.com": ["Photo:*"],
+    ".wacai.com": ["Photo:*"]
+  }
+}

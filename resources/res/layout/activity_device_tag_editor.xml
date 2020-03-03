@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/list_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_4_title_bar_return_finish"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/input_rect" android:layout_width="match_parent" android:layout_height="@dimen/listitem_6_height" android:layout_marginTop="26dp">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/class_V" android:gravity="center" android:layout_width="95dp" android:layout_height="match_parent" android:text="@string/input_tag_name" android:maxLines="1"/>
+        <View android:layout_gravity="center" android:background="@color/list_item_bg_press" android:layout_width="1px" android:layout_height="28dp"/>
+        <EditText android:textSize="@dimen/font_size_15sp" android:textColor="@color/class_D" android:ellipsize="end" android:id="@+id/input_tag" android:background="@null" android:paddingLeft="15dp" android:paddingRight="1dp" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/input_tag_name_hint" android:maxLines="1" android:maxLength="20" android:layout_weight="1" android:textCursorDrawable="@null" android:paddingStart="15dp" android:paddingEnd="1dp"/>
+    </LinearLayout>
+    <fragment android:name="com.xiaomi.smarthome.miio.page.devicetag.DeviceTagEditorFragment" android:id="@+id/device_tag_left_fragment" android:tag="editor" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

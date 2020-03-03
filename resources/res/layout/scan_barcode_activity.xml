@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/class_A" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <SurfaceView android:id="@+id/preview_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.xiaomi.qrcode.ViewfinderView android:id="@+id/viewfinder_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="4" android:layout_below="@+id/title_bar">
+        <FrameLayout android:id="@+id/fl_scan_line" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_gravity="center_horizontal" android:id="@+id/scan_line" android:background="@color/miui_blue" android:visibility="visible" android:layout_width="194dp" android:layout_height="1.33dp" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true"/>
+        </FrameLayout>
+        <TextView android:textSize="14.7sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_20dp" android:layout_marginTop="38dp" android:layout_marginRight="@dimen/size_20dp" android:text="@string/msg_default_status2" android:layout_below="@+id/fl_scan_line" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="11.7sp" android:textColor="#0099ff" android:layout_gravity="center_horizontal" android:id="@+id/goto_support_qrcode_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/goto_support_qrcode_page" android:layout_below="@+id/tips" android:layout_centerHorizontal="true"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:textSize="14.7sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/add_manully" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:text="@string/add_device_manually" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

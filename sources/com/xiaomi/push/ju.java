@@ -1,0 +1,35 @@
+package com.xiaomi.push;
+
+public abstract class ju {
+    public abstract int a(byte[] bArr, int i, int i2);
+
+    public void a(int i) {
+    }
+
+    public byte[] a() {
+        return null;
+    }
+
+    public int b() {
+        return 0;
+    }
+
+    public abstract void b(byte[] bArr, int i, int i2);
+
+    public int c() {
+        return -1;
+    }
+
+    public int d(byte[] bArr, int i, int i2) {
+        int i3 = 0;
+        while (i3 < i2) {
+            int a2 = a(bArr, i + i3, i2 - i3);
+            if (a2 > 0) {
+                i3 += a2;
+            } else {
+                throw new jv("Cannot read. Remote side has closed. Tried to read " + i2 + " bytes, but only got " + i3 + " bytes.");
+            }
+        }
+        return i3;
+    }
+}

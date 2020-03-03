@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mi.global.bbs.view.AbsorbNavigationLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/activity_home_navigation_container" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/activity_home_top_bg_frame" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/activity_home_top_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/activity_home_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.mi.global.bbs.view.Editor.FontTextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/activity_home_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:textDirection="locale" android:layout_marginStart="50dp" app:textBounds="1"/>
+                <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="#c4c4c4" android:id="@+id/activity_home_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="25dp" android:textDirection="locale" android:layout_marginStart="50dp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <com.mi.global.bbs.view.PagerSlidingTabStrip android:id="@+id/fragment_activity_nag" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <android.support.v4.view.ViewPager android:id="@+id/fragment_activity_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/fragment_activity_nag"/>
+</com.mi.global.bbs.view.AbsorbNavigationLayout>

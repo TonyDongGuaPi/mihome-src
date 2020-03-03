@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/class_F" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <View android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/remote_control_curation_open" android:background="@drawable/remote_control_curation_open" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/remote_control_curation_pause" android:background="@drawable/remote_control_curation_pause" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/remote_control_curation_close" android:background="@drawable/remote_control_curation_close" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <View android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>

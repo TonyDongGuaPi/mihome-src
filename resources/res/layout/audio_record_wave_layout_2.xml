@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/content_base">
+    <com.xiaomi.smarthome.mibrain.viewutil.waveview.RippleBackground android:id="@+id/ripple_anim_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:rb_duration="2000" app:rb_radius="28dp" app:rb_rippleAmount="4" app:rb_scale="2" app:rb_start_alpha="0.13">
+        <View android:id="@+id/audio_record_bg" android:background="@drawable/shape_light_blue_oval_bg" android:visibility="gone" android:layout_width="68dp" android:layout_height="68dp" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/voice_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_floating_action_view" android:layout_centerInParent="true"/>
+    </com.xiaomi.smarthome.mibrain.viewutil.waveview.RippleBackground>
+</merge>

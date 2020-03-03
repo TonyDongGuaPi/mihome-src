@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bbs_attach_layout_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/padding_normal">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="#ed702e" android:id="@+id/attach_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/attach_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="9dp"/>
+            <com.mi.global.bbs.view.Editor.FontTextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/attach_downloadCount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/attach_download_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_normal" android:src="@drawable/bbs_attach_download_icon"/>
+</LinearLayout>

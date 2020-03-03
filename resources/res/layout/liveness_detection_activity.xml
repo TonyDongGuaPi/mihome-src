@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextureView android:id="@+id/camera_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/liveness_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/liveness_bg" android:scaleType="centerCrop"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="25dp" android:textColor="#ffffff" android:id="@+id/guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="20dp" android:textColor="#ffffff" android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/guide" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/count_down" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/count_down" android:layout_below="@+id/tips" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:id="@+id/detection_step" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/tips" android:layout_centerHorizontal="true">
+            <com.xiaomi.jr.verification.livenessdetection.CircleButton android:id="@+id/first_circle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.xiaomi.jr.verification.livenessdetection.CircleButton android:id="@+id/second_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp"/>
+            <com.xiaomi.jr.verification.livenessdetection.CircleButton android:id="@+id/third_circle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/rotate_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <com.xiaomi.jr.verification.livenessdetection.DebugView android:id="@+id/debug" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/animated_progressbar"/>
+        <TextView android:textSize="13dp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/verifying"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/close" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="40dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:src="@drawable/capture_photo_close" android:paddingStart="20dp" android:paddingEnd="40dp"/>
+</RelativeLayout>

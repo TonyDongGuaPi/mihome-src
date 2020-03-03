@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/mishopsdk_bg_grey_state" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/mishopsdk_height48">
+            <ImageView android:id="@+id/mishopsdk_basetitle_iconleft" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/mishopsdk_icon_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/mishopsdk_basetitle_layoutcenter" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/mishopsdk_basetitle_iconleft">
+                <TextView android:textSize="@dimen/mishopsdk_t16" android:textColor="@color/mishopsdk_t_grey_title" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/mishopsdk_basetitle_layoutcenter_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/mishopsdk_sdk_name" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mishopsdk_basetitle_layoutright" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@+id/mishopsdk_basetitle_homeview" android:paddingLeft="@dimen/mishopsdk_padding12" android:paddingRight="@dimen/mishopsdk_padding12" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48dp" android:src="@drawable/mishopsdk_icon_home"/>
+                <FrameLayout android:id="@+id/mishopsdk_basetitle_layoutright_cartview" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <com.xiaomi.mishopsdk.widget.BadgeView android:textSize="9dp" android:textColor="@color/mishopsdk_white" android:gravity="center" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/mishopsdk_basetitle_layoutright_txtcartcount" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginTop="7dp" android:layout_marginRight="5dp"/>
+                    <ImageView android:layout_gravity="center" android:paddingLeft="2dp" android:paddingRight="@dimen/mishopsdk_padding12" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="48dp" android:src="@drawable/mishopsdk_icon_cart"/>
+                    <View android:layout_gravity="center" android:id="@+id/mishopsdk_basetitle_layoutright_cartcenter" android:visibility="invisible" android:layout_width="1dp" android:layout_height="1dp" android:layout_marginRight="3dp"/>
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

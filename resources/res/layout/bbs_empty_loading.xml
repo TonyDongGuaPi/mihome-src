@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <RelativeLayout android:id="@+id/empty_progress_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/layoutLocal">
+        <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/v6_common_listitem_padding" android:layout_marginBottom="@dimen/v6_common_listitem_padding" android:layout_centerInParent="true" style="@style/Widget.ProgressBar"/>
+    </RelativeLayout>
+    <com.mi.widget.CommonButton android:textColor="#585858" android:id="@+id/button" android:visibility="gone" android:layout_marginBottom="40dp" android:layout_alignParentBottom="true" android:layout_marginStart="40dp" android:layout_marginEnd="40dp"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/error_view_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/button" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/empty_tip_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bbs_icon_empty_loadingview_tip" android:scaleType="centerInside"/>
+        <TextView android:textSize="@dimen/v6_common_listitem_title_textsize" android:textColor="@color/empty_loading_tip_textcolor" android:gravity="center_horizontal" android:id="@+id/empty_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:textDirection="locale" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    </LinearLayout>
+</merge>

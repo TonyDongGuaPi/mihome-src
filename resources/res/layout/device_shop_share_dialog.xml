@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="#f8f8f8" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/miliao_share" android:text="@string/smarthome_share_miliao" android:drawableTop="@drawable/std_shop_details_share_icon_ml" style="@style/NormalShareItem"/>
+        <TextView android:id="@+id/wx_share" android:text="@string/smarthome_share_wecaht" android:drawableTop="@drawable/std_shop_details_share_icon_wxhy" style="@style/NormalShareItem"/>
+        <TextView android:id="@+id/friends_share" android:text="@string/smarthome_share_wxcircle" android:drawableTop="@drawable/std_shop_details_share_icon_pyq" style="@style/NormalShareItem"/>
+        <TextView android:id="@+id/weibo_share" android:text="@string/smarthome_share_sinaweibo" android:drawableTop="@drawable/std_shop_details_share_icon_xlwb" style="@style/NormalShareItem"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/copy_share" android:text="@string/smarthome_share_copyurl" android:drawableTop="@drawable/std_shop_details_share_icon_fzlj" style="@style/NormalShareItem"/>
+        <TextView android:visibility="invisible" android:text="@string/smarthome_share_copyurl" android:drawableTop="@drawable/std_shop_details_share_icon_fzlj" style="@style/NormalShareItem"/>
+        <TextView android:visibility="invisible" android:text="@string/smarthome_share_copyurl" android:drawableTop="@drawable/std_shop_details_share_icon_fzlj" style="@style/NormalShareItem"/>
+        <TextView android:visibility="invisible" android:text="@string/smarthome_share_copyurl" android:drawableTop="@drawable/std_shop_details_share_icon_fzlj" style="@style/NormalShareItem"/>
+    </LinearLayout>
+</LinearLayout>

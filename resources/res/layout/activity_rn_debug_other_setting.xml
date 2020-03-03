@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:background="@drawable/common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进入插件是否展示插件启动耗时信息" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/swb_rn_plugin_time_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="进入插件是否Toast RN SDK 版本信息" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/swb_rn_plugin_sdk_version_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/black" android:id="@+id/tv_use_old_plugin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否使用旧版插件" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="android旧插件是原生插件，ios旧插件是老rn插件" android:layout_below="@+id/tv_use_old_plugin" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/swb_use_old_plugin_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/common_white_list" android:layout_width="match_parent" android:layout_height="67dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="15sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AppConfig接口拉取preview版数据" android:layout_centerVertical="true"/>
+                <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/swb_use_preview_app_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

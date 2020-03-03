@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/list_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_4_title_bar_return_finish"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/et_container" android:background="@drawable/input_rect" android:layout_width="match_parent" android:layout_height="@dimen/listitem_6_height" android:layout_marginTop="26dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:gravity="center" android:id="@+id/icon" android:background="@drawable/shape_bg_room_icon" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginLeft="13dp" android:layout_marginStart="13dp" app:placeholderImage="@drawable/default_bg_normal"/>
+        <View android:layout_gravity="center" android:background="@color/list_item_bg_press" android:layout_width="1px" android:layout_height="28dp" android:layout_marginLeft="10dp"/>
+        <EditText android:textSize="@dimen/font_size_15sp" android:textColor="@color/class_D" android:ellipsize="end" android:id="@+id/input_tag" android:background="@null" android:paddingLeft="15dp" android:paddingRight="1dp" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/input_tag_name_hint" android:maxLines="1" android:layout_weight="1" android:textCursorDrawable="@null" android:paddingStart="15dp" android:paddingEnd="1dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <com.xiaomi.smarthome.library.common.widget.PullDownDragListView android:scrollbarStyle="insideOverlay" android:layout_gravity="center_horizontal" android:id="@+id/device_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_above="@+id/bottom_delete_bar"/>
+        <include android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="12dp" layout="@layout/message_center_device_list_header"/>
+        <include android:id="@+id/empty" android:visibility="gone" layout="@layout/item_main_list_empty"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/title_bar_transparent_black"/>
+    <Button android:id="@+id/click" android:background="@color/grey_3" android:padding="10dp" android:layout_width="100dp" android:layout_height="30dp" android:layout_marginRight="30dp" android:layout_marginBottom="20dp" android:text="click" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <ScrollView android:id="@+id/btm_state_sv" android:layout_width="match_parent" android:layout_height="200dp">
+        <TextView android:id="@+id/btm_state_recyclerview" android:layout_width="match_parent" android:layout_height="200dp"/>
+    </ScrollView>
+    <View android:id="@+id/divider" android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_above="@+id/btm_state_sv"/>
+    <ScrollView android:id="@+id/gf_list_sv" android:layout_width="match_parent" android:layout_height="300dp" android:layout_below="@+id/title_bar">
+        <TextView android:id="@+id/gf_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+</RelativeLayout>

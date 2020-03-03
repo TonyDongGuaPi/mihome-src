@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="89dp">
+    <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="89dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/img_last_img" android:layout_width="110dp" android:layout_height="62dp" android:src="@drawable/camera_v4_remind_load_fail" android:scaleType="centerCrop"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/text_remind_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00-00"/>
+                <TextView android:textSize="12sp" android:textColor="#7d000000" android:id="@+id/text_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/text_remind_tag_string"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.xiaomi.smarthome.library.common.widget.SwitchButton android:id="@+id/btn_mode_start_switch" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:background="@drawable/activity_common_bg_title_divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/camera_white_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/title_bar_transparent_black"/>
+        <include layout="@layout/list_line"/>
+    </LinearLayout>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sleep_status" app:item_title="@string/main_power_off" app:item_type="2" style="@style/setting_item"/>
+    <View android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/title_margin_top"/>
+    <com.xiaomi.smarthome.camera.view.widget.SettingsItemView android:id="@+id/sleep_auto_timer" app:item_title="@string/auto_sleep" app:item_type="1" style="@style/setting_item"/>
+</LinearLayout>

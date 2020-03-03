@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="32dp">
+    <View android:background="#000000" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true" android:alpha="0.15"/>
+    <TextView android:textSize="11sp" android:textColor="#7f7f7f" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/search_new_device" android:layout_centerVertical="true"/>
+    <View android:background="#000000" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="24dp" android:layout_alignParentBottom="true" android:alpha="0.15"/>
+</RelativeLayout>

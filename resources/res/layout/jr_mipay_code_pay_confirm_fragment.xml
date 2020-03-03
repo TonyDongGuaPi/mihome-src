@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/jr_mipay_paypass_verifier_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/jr_mipay_dialog_margin_left" android:layout_marginTop="80dp" android:layout_marginRight="@dimen/jr_mipay_dialog_margin_right">
+    <TextView android:textSize="15dp" android:textStyle="bold" android:gravity="center" android:id="@+id/header" android:background="@drawable/jr_mipay_action_bar_dialog_bg" android:layout_width="match_parent" android:layout_height="@dimen/jr_mipay_dialog_title_height" android:text="请输入支付密码"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pay_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/jr_mipay_list_item_bg_normal_light_noline" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="13dp" android:textStyle="bold" android:ellipsize="end" android:id="@+id/trade_info" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="13dp" android:text="小米之家订单" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="13dp" android:textStyle="bold" android:ellipsize="end" android:id="@+id/trade_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10元" android:singleLine="true"/>
+        </LinearLayout>
+        <View android:background="@drawable/jr_mipay_action_bar_dialog_bg" android:layout_width="match_parent" android:layout_height="@dimen/jr_mipay_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/trade_method_row" android:background="@drawable/jr_mipay_list_item_bg_normal_light_noline" android:layout_width="match_parent" android:layout_height="50dp">
+            <LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="13dp" android:textStyle="bold" android:ellipsize="end" android:id="@+id/trade_method_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小米分期|10.00元 * 1期" android:maxLines="1"/>
+                <TextView android:textSize="12dp" android:textColor="#ff9b9b9b" android:ellipsize="end" android:id="@+id/trade_method_summary_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="含手续费：0.00元/期" android:maxLines="1"/>
+            </LinearLayout>
+            <TextView android:textColor="#ff9b9b9b" android:id="@+id/trade_method_switch_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jr_mipay_counter_switch"/>
+            <ImageView android:id="@+id/trade_method_switch_arrow" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jr_mipay_arrow_right"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/extra_info" android:background="@drawable/jr_mipay_list_item_bg_normal_light_up_line" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12dp" android:textColor="#52ba97" android:gravity="left" android:id="@+id/pay_tip_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="建议"/>
+            <com.xiaomi.jr.mipay.codepay.component.AgreementCheckBox android:textSize="12dp" android:textColor="@color/jr_mipay_text_color_gray" android:layout_gravity="center" android:id="@+id/agreement" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/miuisupport_btn_checkbox_light" android:text="同意用户协议"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/footer" android:background="@drawable/jr_mipay_code_pay_counter_footer_bg" android:layout_width="match_parent" android:layout_height="60dp">
+        <com.xiaomi.jr.mipay.pay.verifier.component.PasswordEditText android:layout_gravity="center_horizontal" android:id="@+id/check_password_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Jr.Mipay.Widget.NumberEditText"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/loading_icon" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginRight="10dp" android:src="@drawable/jr_mipay_ic_mipay"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jr_mipay_counter_loading"/>
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:textColor="#33aaff" android:gravity="center" android:layout_gravity="center" android:id="@+id/confirm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jr_mipay_counter_button_cofirm"/>
+    </RelativeLayout>
+</LinearLayout>

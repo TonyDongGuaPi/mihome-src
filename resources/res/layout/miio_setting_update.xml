@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <ViewSwitcher android:id="@+id/vs_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/update_loading_view"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include android:id="@+id/list_space" android:layout_width="match_parent" android:layout_height="@dimen/std_list_space_margin_top" layout="@layout/common_list_space_empty"/>
+                    <View android:layout_width="0dp" android:layout_height="99dp" android:layout_weight="1"/>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.xiaomi.smarthome.library.common.widget.PieProgressBar android:layout_gravity="center" android:id="@+id/pb_progress" android:background="@drawable/update_img_update" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/kuailian_progress_filled" android:layout_centerInParent="true"/>
+                        <TextView android:textSize="30sp" android:textColor="#0195f3" android:gravity="center" android:id="@+id/txt_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1%" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <ProgressBar android:layout_gravity="center" android:id="@+id/installing_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:indeterminate="true" android:layout_centerInParent="true" style="@style/page_circle_loading_progress_1"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/class_B" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/txt_update_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="12dp" android:layout_marginRight="30dp" android:text="@string/update_to_version"/>
+                    <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/txt_update_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="27dp" android:layout_marginRight="30dp" android:text="@string/about_faq_content"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/class_text_7" android:gravity="center" android:id="@+id/txt_updating_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_marginBottom="20dp" android:text="@string/miio_update_tips" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="20dp" android:paddingBottom="35dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textSize="13sp" android:textColor="@color/btn_txt_color" android:id="@+id/btn_bottom" android:background="@drawable/common_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:minHeight="0dp" android:text="@string/camera_settings_camera_update" android:layout_centerInParent="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ViewSwitcher>
+</LinearLayout>

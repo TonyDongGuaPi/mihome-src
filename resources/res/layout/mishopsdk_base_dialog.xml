@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/mishopsdk_basedialog_parent" android:background="@android:color/white" android:paddingLeft="20dp" android:paddingTop="25dp" android:paddingRight="20dp" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@+id/mishopsdk_basedialog_titlebar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/mishopsdk_t14" android:textColor="@color/mishopsdk_t_grey_title" android:gravity="center" android:id="@+id/mishopsdk_basedialog_titlebar_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/mishopsdk_basedialog_titlebar_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/mishopsdk_basedialog_titlebar_title"/>
+        </RelativeLayout>
+        <ScrollView android:id="@+id/mishopsdk_basedialog_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/mishopsdk_t12" android:textColor="@color/mishopsdk_t_grey_desc" android:gravity="center" android:id="@+id/mishopsdk_basedialog_message" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </ScrollView>
+        <LinearLayout android:id="@+id/mishopsdk_basedialog_bottombar" android:background="@drawable/mishopsdk_bg_basedialog_button_parentlayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.xiaomi.mishopsdk.widget.CommonButton android:id="@+id/mishopsdk_basedialog_bottombar_btnnegative" android:visibility="gone" android:layout_width="0dp" android:layout_weight="1" style="@style/mishopsdk_CommonButtonComfirmDialog.Cancel"/>
+            <View android:background="#ffdddddd" android:layout_width="2px" android:layout_height="match_parent"/>
+            <com.xiaomi.mishopsdk.widget.CommonButton android:id="@+id/mishopsdk_basedialog_bottombar_btnpositive" android:visibility="gone" android:layout_width="0dp" android:layout_weight="1" style="@style/mishopsdk_CommonButtonComfirmDialog.Ok"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/mishopsdk_basedialog_bottombar1" android:background="@drawable/mishopsdk_bg_basedialog_button_parentlayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.xiaomi.mishopsdk.widget.CommonButton android:id="@+id/mishopsdk_basedialog_bottombar1_btnNeutral" android:layout_width="match_parent" style="@style/mishopsdk_CommonButtonComfirmDialog.Normal"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

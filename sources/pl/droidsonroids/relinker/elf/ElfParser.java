@@ -1,0 +1,169 @@
+package pl.droidsonroids.relinker.elf;
+
+import cn.com.fmsh.communication.core.MessageHead;
+import com.facebook.soloader.MinElf;
+import java.io.Closeable;
+import java.io.EOFException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.channels.FileChannel;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import pl.droidsonroids.relinker.elf.Elf;
+
+public class ElfParser implements Closeable, Elf {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final int f11989a = MinElf.ELF_MAGIC;
+    private final FileChannel b;
+
+    public ElfParser(File file) throws FileNotFoundException {
+        if (file == null || !file.exists()) {
+            throw new IllegalArgumentException("File is null or does not exist");
+        }
+        this.b = new FileInputStream(file).getChannel();
+    }
+
+    public Elf.Header a() throws IOException {
+        this.b.position(0);
+        ByteBuffer allocate = ByteBuffer.allocate(8);
+        allocate.order(ByteOrder.LITTLE_ENDIAN);
+        if (c(allocate, 0) == 1179403647) {
+            short e = e(allocate, 4);
+            boolean z = e(allocate, 5) == 2;
+            if (e == 1) {
+                return new Elf32Header(z, this);
+            }
+            if (e == 2) {
+                return new Elf64Header(z, this);
+            }
+            throw new IllegalStateException("Invalid class type!");
+        }
+        throw new IllegalArgumentException("Invalid ELF Magic!");
+    }
+
+    public List<String> b() throws IOException {
+        long j;
+        this.b.position(0);
+        ArrayList arrayList = new ArrayList();
+        Elf.Header a2 = a();
+        ByteBuffer allocate = ByteBuffer.allocate(8);
+        allocate.order(a2.d ? ByteOrder.BIG_ENDIAN : ByteOrder.LITTLE_ENDIAN);
+        long j2 = (long) a2.i;
+        int i = 0;
+        if (j2 == 65535) {
+            j2 = a2.a(0).f11988a;
+        }
+        long j3 = 0;
+        while (true) {
+            if (j3 >= j2) {
+                j = 0;
+                break;
+            }
+            Elf.ProgramHeader a3 = a2.a(j3);
+            if (a3.c == 2) {
+                j = a3.d;
+                break;
+            }
+            j3++;
+        }
+        if (j == 0) {
+            return Collections.unmodifiableList(arrayList);
+        }
+        ArrayList<Long> arrayList2 = new ArrayList<>();
+        long j4 = 0;
+        while (true) {
+            Elf.DynamicStructure a4 = a2.a(j, i);
+            if (a4.d == 1) {
+                arrayList2.add(Long.valueOf(a4.e));
+            } else if (a4.d == 5) {
+                j4 = a4.e;
+            }
+            i++;
+            if (a4.d == 0) {
+                break;
+            }
+        }
+        if (j4 != 0) {
+            long a5 = a(a2, j2, j4);
+            for (Long longValue : arrayList2) {
+                arrayList.add(a(allocate, longValue.longValue() + a5));
+            }
+            return arrayList;
+        }
+        throw new IllegalStateException("String table offset not found!");
+    }
+
+    private long a(Elf.Header header, long j, long j2) throws IOException {
+        for (long j3 = 0; j3 < j; j3++) {
+            Elf.ProgramHeader a2 = header.a(j3);
+            if (a2.c == 1 && a2.e <= j2 && j2 <= a2.e + a2.f) {
+                return (j2 - a2.e) + a2.d;
+            }
+        }
+        throw new IllegalStateException("Could not map vma to file offset!");
+    }
+
+    public void close() throws IOException {
+        this.b.close();
+    }
+
+    /* access modifiers changed from: protected */
+    public String a(ByteBuffer byteBuffer, long j) throws IOException {
+        StringBuilder sb = new StringBuilder();
+        while (true) {
+            long j2 = 1 + j;
+            short e = e(byteBuffer, j);
+            if (e == 0) {
+                return sb.toString();
+            }
+            sb.append((char) e);
+            j = j2;
+        }
+    }
+
+    /* access modifiers changed from: protected */
+    public long b(ByteBuffer byteBuffer, long j) throws IOException {
+        a(byteBuffer, j, 8);
+        return byteBuffer.getLong();
+    }
+
+    /* access modifiers changed from: protected */
+    public long c(ByteBuffer byteBuffer, long j) throws IOException {
+        a(byteBuffer, j, 4);
+        return ((long) byteBuffer.getInt()) & MessageHead.SERIAL_MAK;
+    }
+
+    /* access modifiers changed from: protected */
+    public int d(ByteBuffer byteBuffer, long j) throws IOException {
+        a(byteBuffer, j, 2);
+        return byteBuffer.getShort() & 65535;
+    }
+
+    /* access modifiers changed from: protected */
+    public short e(ByteBuffer byteBuffer, long j) throws IOException {
+        a(byteBuffer, j, 1);
+        return (short) (byteBuffer.get() & 255);
+    }
+
+    /* access modifiers changed from: protected */
+    public void a(ByteBuffer byteBuffer, long j, int i) throws IOException {
+        byteBuffer.position(0);
+        byteBuffer.limit(i);
+        long j2 = 0;
+        while (j2 < ((long) i)) {
+            int read = this.b.read(byteBuffer, j + j2);
+            if (read != -1) {
+                j2 += (long) read;
+            } else {
+                throw new EOFException();
+            }
+        }
+        byteBuffer.position(0);
+    }
+}

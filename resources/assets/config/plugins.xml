@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugins>
+    <plugin desc="有品商品详情页" gitInfo="1e2d4a8:mishopsdk23" has_so="true" id="101" md5="ef1402d73d5a339627012346ca4168c5" path="plugins/mishopYouPinGoodsDetail.dat" priority="3" rootFragment="com.xiaomi.shop2.plugin.goodsdetail.GoodsDetailFragment" type="apk" version="293" versionParent="20161201">
+    </plugin>
+    <plugin desc="有品商品评价" gitInfo="1e2d4a8:mishopsdk23" has_so="false" id="104" md5="47f877b529eb4118cd262d059cb187ec" path="plugins/mishopYouPinGoodsComment.dat" priority="2" rootFragment="com.xiaomi.shop.plugin.goodscomment.ui.RootFragment" type="apk" version="26" versionParent="20161201">
+    </plugin>
+    <plugin desc="地址" gitInfo="1e2d4a8:mishopsdk23" has_so="false" id="105" md5="bd111c98543dede119e0a05fa06da968" path="plugins/mishopAddress.dat" priority="3" rootFragment="com.xiaomi.shop.plugin.address.ui.RootFragment" type="apk" version="54" versionParent="20161201">
+    </plugin>
+    <plugin desc="有品频道页" gitInfo="1e2d4a8:mishopsdk23" has_so="true" id="15102" md5="8393623bd684b990b33491223a1a1285" path="plugins/mishopYouPinChannel.dat" priority="20" rootFragment="com.xiaomi.shop2.plugin.hdchannel.RootFragment" type="apk" version="27" versionParent="20161201">
+    </plugin>
+    <plugin desc="图片选择" gitInfo="1e2d4a8:mishopsdk23" has_so="false" id="112" md5="802c231417ebff1a6ffb7b1b42a13059" path="plugins/mishopPhotoPicker.dat" priority="12" rootFragment="com.xiaomi.shop2.plugin.photopicker.ChoosePhotosFragment" type="apk" version="12" versionParent="20161201" />
+    <plugin desc="无插件页面" gitInfo="1e2d4a8:mishopsdk23" has_so="false" id="10005" md5="dc5cf85377657b7093c28cf07423b70d" path="plugins/mishopNoPlugin.dat" priority="20" rootFragment="com.xiaomi.shop.plugin.noplugin.RootFragment" type="apk" version="1" versionParent="20171116">
+    </plugin>
+    <plugin desc="在线客服" gitInfo="1e2d4a8:mishopsdk23" has_so="false" id="117" md5="061b7087ba59d354ed36c90690f76121" path="plugins/mishopYouPinChat.dat" priority="3" rootFragment="com.xiaomi.chat.fragment.RootFragment" type="apk" version="18" versionParent="20161201">
+    </plugin>
+    <plugin desc="M页面" gitInfo="1e2d4a8:mishopsdk23" has_so="false" id="111" md5="c025bf75a7d4f5a2165df93982416885" path="plugins/mishopWebView.dat" priority="2" rootFragment="com.xiaomi.shop2.plugin.webview.RootFragment" type="apk" version="2" versionParent="20161201">
+    </plugin>
+
+    <unpack_plugin desc="优惠券" gitInfo="1e2d4a8:mishopsdk23" has_so="false" id="107" md5="c254d304794e8644ad64c675713352b5" path="plugins/mishopCoupon.dat" priority="16" rootFragment="com.xiaomi.shop2.plugin.mishopcoupon.RootFragment" type="apk" version="1" versionParent="20161201" />
+
+    <unpack_plugin desc="节能补贴" gitInfo="1e2d4a8:mishopsdk23" has_so="false" id="152" md5="a9732dc5c326e6696dd3e2b8db07f540" path="plugins/mishopSubsidy.dat" priority="3" rootFragment="com.xiaomi.shop.plugin.subsidy.ui.RootFragment" type="apk" version="1" versionParent="20161201">
+    </unpack_plugin>
+</plugins>

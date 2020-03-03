@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutLocal">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/comment_item_top_container" android:background="@drawable/user_activity_item_gray_sharp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+        <ImageView android:id="@+id/comment_item_top_img" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:scaleType="centerCrop" android:layout_marginStart="6dp"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/comment_item_top_title" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale"/>
+    </LinearLayout>
+    <View android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/comment_item_top_comments_count" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textDirection="locale" android:paddingStart="16dp"/>
+        <ImageView android:id="@+id/comment_item_top_comments_order_bt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bbs_comment_order_icon" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    </LinearLayout>
+    <View android:background="@color/user_center_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

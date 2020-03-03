@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/loading_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_loading"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/main_banner_text_color_2" android:gravity="center" android:id="@+id/loading_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="200dp" android:text="@string/main_page_loading_state_initialing" android:singleLine="true" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</RelativeLayout>

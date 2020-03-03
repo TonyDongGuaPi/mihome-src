@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <ScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="99">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.mi.global.bbs.view.CategoryView android:orientation="horizontal" android:id="@+id/mCategoryGroupView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/mCategoryContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/divide_color" android:layout_width="match_parent" android:layout_height="0.8dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+                <com.mi.global.bbs.view.CategoryView android:orientation="horizontal" android:id="@+id/mCategoryView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <com.mi.global.bbs.view.Editor.FontEditText android:textSize="15sp" android:textColor="#000000" android:textColorHint="@color/discover_item_advanced_color" android:id="@+id/mTitleEditView" android:background="@color/white" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/please_enter_a_thread_title" android:singleLine="true" android:maxLength="80" android:textDirection="locale" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+            <View android:background="@color/divide_color" android:layout_width="match_parent" android:layout_height="0.8dp" android:layout_marginStart="15dp"/>
+            <com.mi.global.bbs.view.Editor.RichEditor android:id="@+id/mRichEditor" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="300dp" android:textDirection="locale" android:layoutDirection="locale"/>
+            <FrameLayout android:id="@+id/vote_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+                <LinearLayout android:orientation="vertical" android:id="@+id/vote_item_container" android:background="@drawable/vote_container_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bbs_vote_info_delete" android:onClick="removeVoteLayoutAndClear" android:layout_marginEnd="10dp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.mi.global.bbs.view.EditorToolbar android:id="@+id/mEditorColorToolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="41dp"/>
+    <View android:background="@color/divide_color" android:layout_width="match_parent" android:layout_height="0.8dp"/>
+    <com.mi.global.bbs.view.EditorToolbar android:id="@+id/mEditorToolbar" android:layout_width="match_parent" android:layout_height="41dp"/>
+</LinearLayout>

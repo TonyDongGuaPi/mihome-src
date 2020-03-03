@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/fragment_forum_root" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <FrameLayout android:id="@+id/fragment_forum_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/fragment_forum_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <include layout="@layout/bbs_common_refresh_layout"/>
+    </FrameLayout>
+</LinearLayout>

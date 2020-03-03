@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.V22.Theme.AppCompat">
+        <item name="actionModeShareDrawable">?android:attr/actionModeShareDrawable</item>
+        <item name="editTextBackground">?android:attr/editTextBackground</item>
+    </style>
+    <style name="Base.V22.Theme.AppCompat.Light">
+        <item name="actionModeShareDrawable">?android:attr/actionModeShareDrawable</item>
+        <item name="editTextBackground">?android:attr/editTextBackground</item>
+    </style>
+    <style name="LockActivityTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="?0x101058c">false</item>
+    </style>
+    <style name="LoginActivity">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimation</item>
+        <item name="?0x101058c">false</item>
+    </style>
+    <style name="NoActionBarDark">
+        <item name="?0x101058c">false</item>
+    </style>
+    <style name="Theme.ActivityTranslucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="?0x101058c">false</item>
+        <item name="?0x1010590">true</item>
+        <item name="colorPrimary">@color/transparent</item>
+    </style>
+    <style name="Theme.AlphaInActivity">
+        <item name="android:windowBackground">@color/black_00_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationAlphaIn</item>
+        <item name="?0x101058c">false</item>
+    </style>
+    <style name="Theme.ChoosDevice">
+        <item name="android:windowBackground">@color/black_00_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="?0x101058c">false</item>
+    </style>
+    <style name="Theme.DeviceMoreActivity">
+        <item name="android:windowBackground">@color/black_00_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="?0x101058c">false</item>
+    </style>
+    <style name="Theme.Trans">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="?0x101058c">false</item>
+    </style>
+    <style name="Theme.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="?0x101058c">false</item>
+    </style>
+    <style name="Theme.TransparentActivity">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="?0x101058c">false</item>
+        <item name="?0x1010590">true</item>
+    </style>
+    <style name="Theme.Transparent_bg">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="?0x101058c">false</item>
+    </style>
+    <style name="V5">
+        <item name="?0x101058c">false</item>
+        <item name="?0x1010590">true</item>
+    </style>
+    <style name="permission_PermissionActivity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="?0x101058c">false</item>
+    </style>
+</resources>

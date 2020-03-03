@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:gravity="center" android:background="@drawable/ucashier_bottom_line" android:layout_width="match_parent" android:layout_height="@dimen/ucashier_title_height" android:text="@string/ucashier_trade_title" style="@style/UCashier.TextAppearance.Title"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ucashier_bottom_line" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:id="@+id/trade_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/UCashier.TextAppearance.Item"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <TextView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/trade_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/UCashier.TextAppearance.Item"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/pay_method_container" android:background="@drawable/ucashier_bottom_line" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:id="@+id/pay_method" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/UCashier.TextAppearance.Item"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ucashier_right_arrow"/>
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@+id/trade_tip" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="60dp" style="@style/UCashier.TextAppearance.Tip"/>
+    </LinearLayout>
+    <Button android:layout_gravity="center_horizontal" android:id="@+id/pay_button" android:background="@drawable/ucashier_button" android:paddingTop="@dimen/ucashier_button_padding_vertical" android:paddingBottom="@dimen/ucashier_button_padding_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ucashier_button_margin_horizontal" android:layout_marginRight="@dimen/ucashier_button_margin_horizontal" android:layout_marginBottom="@dimen/ucashier_button_margin_bottom" android:text="@string/ucashier_confirm_button_text" style="@style/UCashier.Widget.Button"/>
+</LinearLayout>

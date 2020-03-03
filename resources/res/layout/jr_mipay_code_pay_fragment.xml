@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/jr_mipay_background_color_code_pay" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/content" android:layout_width="@dimen/jr_mipay_code_pay_frame_width" android:layout_height="wrap_content" android:layout_marginTop="90dp">
+        <FrameLayout android:background="@android:color/white" android:layout_width="@dimen/jr_mipay_code_pay_frame_width" android:layout_height="@dimen/jr_mipay_code_pay_frame_height">
+            <LinearLayout android:orientation="vertical" android:id="@+id/code_container" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center" android:id="@+id/barCode" android:paddingLeft="@dimen/jr_mipay_bar_code_padding_left" android:paddingTop="@dimen/jr_mipay_code_pay_frame_padding" android:paddingRight="@dimen/jr_mipay_bar_code_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/jr_mipay_text_size_pay_code" android:textStyle="bold" android:layout_gravity="center" android:id="@+id/code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:layout_marginBottom="10dp"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/jr_mipay_background_color_gray" android:layout_width="match_parent" android:layout_height="@dimen/jr_mipay_pay_code_content_height" android:layout_marginTop="7dp">
+                    <ImageView android:id="@+id/qrCode" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15dp">
+                        <TextView android:textSize="@dimen/jr_mipay_text_size_tiny" android:textColor="@color/jr_mipay_text_color_gray" android:id="@+id/refresh_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jr_mipay_refresh_tips"/>
+                        <ImageView android:id="@+id/refresh_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jr_mipay_refresh"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/type_container" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:maxWidth="@dimen/jr_mipay_pay_type_icon_width" android:maxHeight="@dimen/jr_mipay_pay_type_icon_height"/>
+                    <TextView android:textSize="@dimen/jr_mipay_text_size_pay_type_details" android:ellipsize="marquee" android:id="@+id/pay_type_details" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:singleLine="true" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/jr_mipay_text_size_pay_type_details" android:textColor="@color/jr_mipay_text_color_pay_type_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="@string/jr_mipay_change_code_pay_type"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.xiaomi.jr.mipay.codepay.component.CommonErrorView android:id="@+id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/open_term_pay_container" android:background="@drawable/jr_mipay_open_term_pay_bg" android:paddingTop="15dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="@dimen/jr_mipay_code_pay_frame_width" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jr_mipay_miloan_open_term"/>
+                <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/jr_mipay_open_term_pay_button"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <ImageView android:id="@+id/back" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="40dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jr_mipay_action_bar_back_dark" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:paddingStart="20dp" android:paddingEnd="40dp" android:layout_alignParentStart="true"/>
+        <TextView android:textSize="16dp" android:textColor="#c0ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jr_mipay_code_pay_title" android:layout_weight="1" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/menu" android:paddingLeft="20dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jr_mipay_action_mode_immersion_more_white" android:layout_alignParentRight="true" android:paddingStart="20dp" android:paddingEnd="10dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</FrameLayout>

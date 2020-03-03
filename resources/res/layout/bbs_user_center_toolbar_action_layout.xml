@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:gravity="center" android:id="@+id/user_center_edit" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bbs_user_center_edit_icon_white" android:layout_marginEnd="20dp"/>
+    <ImageView android:gravity="center" android:id="@+id/user_center_share" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/bbs_user_center_share_white" android:layout_marginEnd="16dp"/>
+</merge>

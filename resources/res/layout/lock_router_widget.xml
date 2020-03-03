@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lock_router_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:background="#66ffffff" android:layout_width="1px" android:layout_height="30dp" android:layout_marginRight="10dp" android:layout_marginEnd="10dp"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/download_container" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/lock_screen_icon_download" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="8sp" android:textColor="#66ffffff" android:id="@+id/download_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/smarthome_lock_router_download"/>
+    </LinearLayout>
+    <View android:background="#66ffffff" android:layout_width="1px" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/device_size_container" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/lock_screen_icon_device" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="8sp" android:textColor="#66ffffff" android:id="@+id/device_size_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/smarthome_lock_router_device" android:drawablePadding="3dp"/>
+    </LinearLayout>
+</LinearLayout>

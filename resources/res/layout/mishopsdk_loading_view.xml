@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <RelativeLayout android:id="@+id/mishopsdk_loadingview_progress_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mishopsdk_v6_common_listitem_padding" android:layout_marginBottom="@dimen/mishopsdk_v6_common_listitem_padding" android:layout_centerInParent="true" style="@style/mishopsdk_Widget.ProgressBar"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/mishopsdk_loadingview_txtcontainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mishopsdk_icon_empty_loadingview_tip" android:scaleType="centerInside"/>
+            <TextView android:textSize="@dimen/mishopsdk_v6_common_listitem_title_textsize" android:textColor="@color/mishopsdk_t_grey_desc" android:gravity="center_horizontal" android:id="@+id/mishopsdk_loadingview_txterror" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+        </LinearLayout>
+        <com.xiaomi.mishopsdk.widget.CommonButton android:textColor="#585858" android:id="@+id/mishopsdk_loadingview_button" android:layout_margin="24dp" android:layout_alignParentBottom="true" style="@style/mishopsdk_UserCentralQuitButton"/>
+    </RelativeLayout>
+</merge>

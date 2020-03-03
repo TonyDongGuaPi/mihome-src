@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+    <View android:id="@+id/left_line" android:background="#e5e5e5" android:layout_width="73dp" android:layout_height="1px" android:layout_marginLeft="20dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/category_name" android:layout_width="80dp" android:layout_height="wrap_content" android:text="@string/smarthome_device_common_device" android:singleLine="true" android:layout_centerInParent="true"/>
+    <View android:id="@+id/right_line" android:background="#e5e5e5" android:layout_width="73dp" android:layout_height="1px" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

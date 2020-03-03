@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/class_A" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/module_a_3_title_bar_return"/>
+    <include layout="@layout/device_shop_loading"/>
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/address_list" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_weight="1" android:overScrollMode="never"/>
+    <FrameLayout android:id="@+id/foot_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="top" android:background="@color/black_20_transparent" android:layout_width="match_parent" android:layout_height="0.33dp"/>
+        <TextView android:textSize="@dimen/font_size_6" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/address_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/device_shop_address_new" android:drawableTop="@drawable/timer_add_button" android:drawablePadding="4dp"/>
+    </FrameLayout>
+</LinearLayout>

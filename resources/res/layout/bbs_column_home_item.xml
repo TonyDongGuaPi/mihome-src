@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/white_pressed_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" style="@style/layoutLocal">
+    <include layout="@layout/bbs_column_item_common_top"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="@dimen/forum_title_textSize" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/column_article_item_title" android:paddingTop="15dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingMultiplier="1.2" android:textDirection="locale" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+        <ImageView android:id="@+id/column_article_item_pic" android:layout_width="match_parent" android:layout_height="155dp" android:scaleType="centerCrop"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="14sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/column_article_item_des" android:paddingTop="15dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingMultiplier="1.2" android:textDirection="locale" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    </LinearLayout>
+    <include layout="@layout/bbs_forum_item_common_bottom"/>
+</LinearLayout>

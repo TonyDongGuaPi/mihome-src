@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns:internal="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customPullDownRefreshLL="http://schemas.android.com/apk/res/com.xiaomi.smarthome" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <feature name="com.xiaomi.payment.hybrid.feature.MibiRechargeFeature"/>
+    <feature name="com.xiaomi.payment.hybrid.feature.MibiEntryFeature"/>
+    <feature name="com.xiaomi.payment.hybrid.feature.MibiPayFeature"/>
+    <feature name="com.xiaomi.payment.hybrid.feature.MibiDeductFeature"/>
+    <feature name="com.xiaomi.payment.hybrid.feature.MibiSignDeductFeature"/>
+    <access origin="http://wali.com" subdomains="true"/>
+    <access origin="https://wali.com" subdomains="true"/>
+    <access origin="http://mi.com" subdomains="true"/>
+    <access origin="https://mi.com" subdomains="true"/>
+    <access origin="http://xiaomi.com" subdomains="true"/>
+    <access origin="https://xiaomi.com" subdomains="true"/>
+</widget>

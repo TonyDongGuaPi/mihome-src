@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false" android:drawable="@drawable/std_btn_long_one_dis_v2"/>
+    <item android:state_pressed="true" android:drawable="@drawable/std_btn_long_one_press_v2"/>
+    <item android:state_checked="true" android:drawable="@drawable/std_btn_long_one_press_v2"/>
+    <item android:drawable="@drawable/std_btn_long_one_normal_v2"/>
+</selector>

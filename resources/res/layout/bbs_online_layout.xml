@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/layoutLocal">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp"/>
+    <RelativeLayout android:id="@+id/frame_online_empty_layout" android:background="@color/common_bg_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_online_empty_image" android:background="@drawable/bbs_activity_empty_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp" android:layout_centerHorizontal="true"/>
+        <com.mi.global.bbs.view.Editor.FontTextView android:textSize="15sp" android:textColor="#999999" android:id="@+id/iv_online_empty_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="@string/activity_empty_string" android:layout_below="@+id/iv_online_empty_image" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1" android:textDirection="locale" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/common_refresh_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <android.support.v7.widget.RecyclerView android:id="@+id/common_recycle_view" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

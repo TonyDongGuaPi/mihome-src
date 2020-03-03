@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" xmlns:PtrHeader="http://schemas.android.com/apk/PtrHeader" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:miui="http://schemas.android.com/apk/res/miui" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/lock_item_selector" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="73dp" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="48dp" android:layout_height="48dp"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/class_text_trans_80" android:ellipsize="marquee" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smarthome_device_common_device" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/class_text_trans_40" android:ellipsize="marquee" android:id="@+id/name_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/closed" android:singleLine="true"/>
+        </LinearLayout>
+        <include layout="@layout/lock_switch_button"/>
+    </LinearLayout>
+    <View android:id="@+id/bottom_divider" android:background="@drawable/list_divider_locked" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

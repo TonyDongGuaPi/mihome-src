@@ -1,0 +1,71 @@
+package com.xiaomi.smarthome.library.bluetooth;
+
+import com.xiaomi.smarthome.library.bluetooth.utils.UUIDUtils;
+import java.util.UUID;
+
+public class BluetoothConstants {
+    public static UUID A = UUID.fromString("00002902-0000-1000-8000-00805f9b34fb");
+    public static final String B = "extra.status";
+    public static final String C = "extra.new.state";
+    public static final String D = "extra.pair.code";
+    public static final String E = "IS_STANDARD_AUTH_DEVICE";
+    public static final String F = "action.log";
+    public static final int G = 65173;
+    public static final UUID H = UUIDUtils.a(1);
+    public static final UUID I = UUIDUtils.a(2);
+    public static final UUID J = UUIDUtils.a(4);
+    public static final UUID K = UUIDUtils.a(5);
+    public static final UUID L = UUIDUtils.a(6);
+    public static final UUID M = UUIDUtils.a(16);
+    public static final UUID N = UUIDUtils.a(17);
+    public static final UUID O = UUIDUtils.a(5);
+    public static final UUID P = UUIDUtils.a(19);
+    public static final UUID Q = UUIDUtils.a(20);
+    public static final UUID R = UUIDUtils.a(21);
+    public static final UUID S = UUIDUtils.a(22);
+    public static final UUID T = UUIDUtils.a(23);
+    public static final UUID U = UUIDUtils.a(24);
+    public static final UUID V = UUIDUtils.a(25);
+    public static final int W = 15000;
+    public static final int X = 0;
+    public static final int Y = 1;
+    public static final int Z = 2;
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final int f18454a = 10000;
+    public static final String aa = "blt.";
+    public static final String ab = "key_version";
+    public static final String ac = "key_token";
+    public static final String ad = "key_is_connect_failed";
+    public static final String ae = "key_device_did";
+    public static final int af = 5;
+    public static final UUID ag = UUID.fromString("00001000-1720-0206-0100-00805f9bab34");
+    public static final UUID ah = UUID.fromString("00002000-1720-0206-0100-00805f9bab34");
+    public static final String ai = "ltmk";
+    public static final String aj = "session_key";
+    public static final int b = 1;
+    public static final int c = 2;
+    public static final int d = 1;
+    public static final int e = 2;
+    public static final int f = 16;
+    public static final int g = 32;
+    public static final int h = 65173;
+    public static final UUID i = UUIDUtils.a(65173);
+    public static final String j = "key_bytes";
+    public static final String k = "key_rssi";
+    public static final String l = "key_mtu";
+    public static final String m = "key_code";
+    public static final String n = "key_device_address";
+    public static final String o = "key_connect_status";
+    public static final String p = "key_service_uuid";
+    public static final String q = "key_character_uuid";
+    public static final String r = "key_character_value";
+    public static final String s = "key_character_write_status";
+    public static final String t = "key_miservice_characters";
+    public static final String u = "key_gatt_profile";
+    public static final String v = "com.xiaomi.smarthome.bluetooth.character_write";
+    public static final String w = "com.xiaomi.smarthome.bluetooth.connect_status_changed";
+    public static final String x = "com.xiaomi.smarthome.bluetooth.character_changed";
+    public static final int y = 16;
+    public static final int z = 133;
+}
